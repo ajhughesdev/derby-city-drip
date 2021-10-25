@@ -1,0 +1,21 @@
+@font-face {
+	font-family: 'Open Sans Variable';
+	src: url('../fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.woff2') format('woff2-variations');
+	font-weight: 300 800;
+	font-stretch: 75% 100%;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Quantico Bold';
+	src: url('../fonts/Quantico/Quantico-Bold.woff2') format('woff2-variations');
+	font-style: normal;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Quantico Bold', 'Courier New', monospace;
+}
+
+html, p, span {
+	font-family: 'Open Sans Variable', sans-serif;
+}
