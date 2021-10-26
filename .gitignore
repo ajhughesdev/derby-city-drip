@@ -2,5 +2,7 @@ fonts/.DS_Store
 .DS_Store
 node_modules
 package-lock.json
-.gitignore
-.gitignore
+.vscode/settings.json
+css/main.css.map
+.eslintrc
+package.json

@@ -18,17 +18,19 @@
   </head>
 
   <body>
-    <header>
+    <header class="nav">
       <img src="img/derbycitydrip-logo.svg" alt="logo" class="logo-svg" />
-      <nav class="menu">
+      <div class="menu">
         <span onclick="openNav()" style="cursor: pointer">
           <img src="img/menu.svg" alt="coffee cup" class="menu-svg" />
         </span>
-      </nav>
+      </div>
     </header>
     <section class="hero">
       <div class="hero-1">
-        <h1>experience the best cup in town</h1>
+        <header>
+          <h1>experience the best cup in town</h1>
+        </header>
         <p>Single origin mazagran, half and half robust pumpkin spice aged con panna. Sugar shup at a single shot
           steamed half and half.</p>
         <button class="order-online" type="button">order online</button>
@@ -37,9 +39,68 @@
         </span>
       </div>
       <div class="hero-2">
-        <h2>our finely roasted coffees</h2>
+        <header>
+          <h1>our finely roasted coffees</h1>
+        </header>
         <p>Flavour sit brewed irish qui roast americano mocha single shot affogato. Aged, steamed roast white saucer
           aroma decaffeinated. Caramelization skinny brewed, foam extra eu latte cream grounds to go. </p>
+      </div>
+    </section>
+    <section class="location location-map">
+      <div class="contact">
+        <header>
+          <h1>location</h1>
+        </header>
+        <div class="address">
+          <p>1234 w. main st.</p>
+          <p>louisville, ky 40213</p>
+        </div>
+        <div class="email-phone">
+          <p>P: 502-555-5555</p>
+          <p>E: hello@derbycitydrip.com</p>
+        </div>
+        <img src="https://via.placeholder.com/300.png" alt="map" class="googleMap" />
+        <!-- <img width=" 300" class="googleMap"
+          src="https://maps.googleapis.com/maps/api/staticmap?scale=4&size=300x300&maptype=roadmap&key={API+key}&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:%7C1234+w+Main+Street,+Louisville,+KY+40213"
+          alt="Google Map of 1234 W Main Street, Louisville, KY 40213" /> -->
+      </div>
+    </section>
+    <section class="location location-hours">
+      <div class="store-info">
+        <header>
+          <h1>hours</h1>
+        </header>
+        <p>These are our current hours, unforeseen circumstances may cause these to change.</p>
+        <table class="hours">
+          <tr>
+            <td class="days">sun:</td>
+            <td class="times">closed</td>
+          </tr>
+          <tr>
+            <td class="days">mon:</td>
+            <td class="times">6am - 10pm</td>
+          </tr>
+          <tr>
+            <td class="days">tue:</td>
+            <td class="times">6am - 10pm</td>
+          </tr>
+          <tr>
+            <td class="days">wed:</td>
+            <td class="times">6am - 10pm</td>
+          </tr>
+          <tr>
+            <td class="days">thur:</td>
+            <td class="times">6am - 10pm</td>
+          </tr>
+          <tr>
+            <td class="days">fri:</td>
+            <td class="times">6am - 12pm</td>
+          </tr>
+          <tr>
+            <td class="days">sat:</td>
+            <td class="times">6am - 12pm</td>
+          </tr>
+        </table>
       </div>
     </section>
     <script src=" js/main.js" async defer></script>
