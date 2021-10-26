@@ -101,9 +101,16 @@ button.order-online {
 }
 
 .location {
-  background-color: rgb(32, 44, 48);
-  padding:  6rem 0 8rem;
+  background-color: #202c30;
   color: #ffffff;
+}
+
+.location-map {
+    padding: 6rem 0 0;
+}
+
+.location-hours {
+  padding: 0 0 8rem;
 }
 
 .contact {
@@ -132,9 +139,39 @@ button.order-online {
   }
 }
 
-.store-info>h1 {
-    margin: 0 auto;
+.store-info  {
+   text-align: center;
+  font-size: 2rem;
+
+  & h1 {
+    padding: 0 0 1.5rem;
   }
+
+    & p {
+      font-weight: 300;
+      font-size: 1rem;
+      padding: 0 2.75rem 3rem;
+    }
+}
+
+table.hours {
+  font-size: 1.1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0 6rem 0 4rem;
+  display: block;
+
+  & tr {
+    text-align: left;
+  
+    & td {
+      padding: 4px 0;
+    }
+    & td.days {
+      padding-right: 3.5rem;
+    }
+  }
+}
 
 
 

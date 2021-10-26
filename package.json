@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/ajhughesdev/derby-city-drip#readme",
   "devDependencies": {
+    "autoprefixer": "^10.3.7",
     "eslint": "^8.1.0"
+  },
+  "dependencies": {
+    "postcss": "^8.3.11"
   }
 }
