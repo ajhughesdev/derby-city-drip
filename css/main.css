@@ -33,8 +33,82 @@ textarea {
   white-space: revert;
 }
 
-html {
+:root {
+  overscroll-behavior: none;
+}
+
+h1 {
   padding: 0 1.25rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  font-family: "Quantico", monospace;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  padding: 0 1.25rem;
+  display: flex;
+  font-family: "Quantico", monospace;
+  font-weight: 700;
+  font-size: 1.5rem;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: #271911;
+}
+
+p {
+  padding: 0 1.25rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.product-menu h1 {
+  color: #212d31;
+}
+
+.product-menu p {
+  color: #271911;
+}
+
+.hero-2, .location-hours, .cta, .sub-footer {
+  color: white;
+}
+
+.hero-2 {
+  background: #271911 url("../img/background/coffee-beans-bg.jpg") no-repeat center;
+  background-size: 65rem;
+}
+
+.hero-1 {
+  background-color: #c8dad9;
+}
+
+.cta {
+  background-color: #1d443f;
+}
+
+.location-hours, footer {
+  background-color: #212d31;
+}
+
+.sub-footer {
+  background-color: #0b1a1e;
+}
+
+.hero-1 img {
+  padding: 0 1.25rem;
+}
+
+.location-hours img {
+  padding: 0 2rem;
+  width: 100%;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */

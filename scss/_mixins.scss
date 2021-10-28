@@ -1,4 +1,6 @@
-@mixin margins {
+@use "variables";
+
+@mixin paddings {
 	padding: 0 1.25rem;
 }
 
@@ -10,21 +12,28 @@
 }
 
 @mixin h1 {
+  @include paddings; 
+  @include centered;
   font-family: "Quantico", monospace;
+  font-weight: 700;
   font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
 }
 
 @mixin h2 {
+  @include paddings; 
   display: flex;
   font-family: "Quantico", monospace;
+  font-weight: 700;
   font-size: 1.5rem;
   justify-content: space-between;
   text-transform: uppercase;
+  color: variables.$dark-brown-text;
 }
 
 @mixin p {
+  @include paddings; 
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 1rem;

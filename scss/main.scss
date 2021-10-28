@@ -3,6 +3,66 @@
 @use 'variables';
 @use 'mixins';
 
-html {
-	@include mixins.margins;
+:root {
+	overscroll-behavior: none;
+}
+
+h1 {
+	@include mixins.h1;
+}
+
+h2 {
+	@include mixins.h2;
+}
+
+p {
+	@include mixins.p;
+}
+
+.product-menu h1 {
+	color: variables.$dark-green-bg;
+}
+
+.product-menu p {
+	color: variables.$dark-brown-text;
+}
+
+.hero-2, .location-hours, .cta, .sub-footer {
+	color: variables.$white-color;
+}
+
+.hero-2 {
+	background: variables.$dark-brown-text url("../img/background/coffee-beans-bg.jpg") no-repeat center;
+	background-size: 65rem;
+}
+
+.hero-1 {
+	background-color: variables.$light-green-bg;
+}
+
+.cta {
+	background-color: variables.$green-bg;
+}
+
+.location-hours, footer {
+	background-color: variables.$dark-green-bg;
+}
+
+.sub-footer {
+	background-color: variables.$darkest-green-bg;	
+}
+
+.hero-1 {
+	img {
+		@include mixins.paddings;
+
+	}
+}
+
+.location-hours {
+	img {
+		padding: 0 2rem;
+		width: 100%;
+		margin: 0 auto;
+	}
 }
