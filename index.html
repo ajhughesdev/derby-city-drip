@@ -3,26 +3,26 @@
 
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Welcome to DERBY CITY DRIP!</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Andrew J Hughes" />
     <meta name="description"
       content="public facing page  for Code Louisville's Front-end Web Development Sept. 2021 cohort final project, a build out of a design by Don Hansen">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Quantico:wght@400;700&display=swap"
       rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
 
   <body>
     <header class="nav">
-      <img src="img/derbycitydrip-logo.svg" alt="logo" class="logo-svg" />
-      <div class="menu">
+      <img src="img/derbycitydrip-logo.svg" alt="" class="logo-svg" />
+      <div class="menu-nav">
         <span onclick="openNav()" style="cursor: pointer">
-          <img src="img/menu.svg" alt="coffee cup" class="menu-svg" />
+          <img src="img/menu-nav.svg" alt="coffee cup" class="menu-nav-svg" />
         </span>
       </div>
     </header>
@@ -31,7 +31,7 @@
         <header>
           <h1>experience the best cup in town</h1>
         </header>
-        <p>Single origin mazagran, half and half robust pumpkin spice aged con panna. Sugar shup at a single shot
+        <p>Single origin mazagran, half and half robust pumpkin spice aged con panna. Sugar shop at a single shot
           steamed half and half.</p>
         <button class="order-online" type="button">order online</button>
         <span class="cup">
@@ -43,7 +43,7 @@
           <h1>our finely roasted coffees</h1>
         </header>
         <p>Flavour sit brewed irish qui roast americano mocha single shot affogato. Aged, steamed roast white saucer
-          aroma decaffeinated. Caramelization skinny brewed, foam extra eu latte cream grounds to go. </p>
+          aroma decaffeinated. Caramelization skinny brewed, foam extra eu latte cream grounds to go.</p>
       </div>
     </section>
     <section class="location location-map">
@@ -61,8 +61,8 @@
         </div>
         <img src="https://via.placeholder.com/300.png" alt="map" class="googleMap" />
         <!-- <img width=" 300" class="googleMap"
-          src="https://maps.googleapis.com/maps/api/staticmap?scale=4&size=300x300&maptype=roadmap&key={API+key}&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:%7C1234+w+Main+Street,+Louisville,+KY+40213"
-          alt="Google Map of 1234 W Main Street, Louisville, KY 40213" /> -->
+            src="https://maps.googleapis.com/maps/api/staticmap?scale=4&size=300x300&maptype=roadmap&key={API+key}&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:%7C1234+w+Main+Street,+Louisville,+KY+40213"
+            alt="Google Map of 1234 W Main Street, Louisville, KY 40213" /> -->
       </div>
     </section>
     <section class="location location-hours">
@@ -103,7 +103,115 @@
         </table>
       </div>
     </section>
-    <script src=" js/main.js" async defer></script>
+    <section class="coffees">
+      <header>
+        <h1>coffees</h1>
+      </header>
+      <p class="sub">Flavour sit brewed irish qui roast americano mocha single shot affogato. Aged, steamed roast white
+        saucer aroma decaffeinated. Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.
+      </p>
+      <h2><span class="left">coffee of the day</span><span class="right">4.99</span></h2>
+      <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+      <h2><span class="left">cafe au lait</span><span class="right">3.99</span></h2>
+      <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+      <h2><span class="left">red eye</span><span class="right">6.99</span></h2>
+      <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+      <h2><span class="left">cold brew iced</span><span class="right">4.99</span></h2>
+      <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+      <h2><span class="left">fair trade mocha</span><span class="right">4.99</span></h2>
+      <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+      <h2><span class="left">beekeeper</span><span class="right">4.99</span></h2>
+      <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+      <h2><span class="left">mocha</span><span class="right">3.99</span></h2>
+      <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+    </section>
+    <section class="teas">
+      <header>
+        <h1>teas</h1>
+      </header>
+      <p class="sub">Flavour sit brewed irish qui roast americano mocha single shot affogato. Aged, steamed roast white
+        saucer aroma decaffeinated. Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.
+      </p>
+      <h2><span class="left">loose-leaf tea</span><span class="right">4.99</span></h2>
+      <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+      <h2><span class="left">tea au lait</span><span class="right">3.99</span></h2>
+      <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+      <h2><span class="left">iced</span><span class="right">6.99</span></h2>
+      <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+      <h2><span class="left">matcha latte</span><span class="right">4.99</span></h2>
+      <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+    </section>
+    <section class="pastries-snacks">
+      <header>
+        <h1>pastries / snacks</h1>
+      </header>
+      <p class="sub">Flavour sit brewed irish qui roast americano mocha single shot affogato. Aged, steamed roast white
+        saucer aroma decaffeinated. Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.
+      </p>
+      <h2><span class="left">donut</span><span class="right">1.99</span></h2>
+      <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+      <h2><span class="left">cookie - 3 pack</span><span class="right">3.99</span></h2>
+      <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+      <h2><span class="left">scone</span><span class="right">2.99</span></h2>
+      <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+      <h2><span class="left">brownie</span><span class="right">2.99</span></h2>
+      <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+    </section>
+    <section class="cta">
+      <header>
+        <h1>join the dcd coffee club!</h1>
+      </header>
+      <p> Steamed roast white saucer aroma decaffeinated. Caramelization skinny brewed, foam extra eu latte cream
+        grounds to go plunger pot.</p>
+      <form action="email_signup.php" target="email-welcome" method="post">
+        <label for="name">NAME:</label><br>
+        <input type="text" id="name" name="name" placeholder="JOHN DOE" required /><br>
+        <label for="email">EMAIL:</label><br>
+        <input type="email" id="email" name="email" placeholder="JOHNDOE@GMAIL.COM" required /><br>
+        <input type="submit" value="join now" />
+      </form>
+    </section>
+    <footer>
+      <section>
+        <header>
+          <h1>location</h1>
+        </header>
+        <div class="address">
+          <p>1234 w. main st.</p>
+          <p>louisville, ky 40213</p>
+        </div>
+        <div class="email-phone">
+          <p>P: 502-555-5555</p>
+          <p>E: hello@derbycitydrip.com</p>
+        </div>
+      </section>
+      <section class="sitemap">
+        <h1>sitemap</h1>
+        <ul>
+          <li>home</li>
+          <li>location</li>
+          <li>menu</li>
+          <li>contact</li>
+        </ul>
+      </section>
+      <section class="socials">
+        <p>Please join us for all the latest announcements via our social network.</p>
+        <div class="socials-svg">
+          <img src="img/352445 1.svg" />
+          <img src="img/iconmonstr-facebook-4.svg" />
+          <img src="img/iconmonstr-twitter-4.svg" />
+          <img src="img/iconmonstr-linkedin-4.svg" />
+        </div>
+      </section>
+      <section class="sub-footer">
+        <p><img src="img/iconmonstr-copyright-2.svg" />copyright
+          <script>document.write(new Date().getFullYear())</script> derby city drip, llc.
+        </p>
+        <p><a>privacy policy</a></p>
+      </section>
+    </footer>
+    <script src=" js/main.js" async defer>
+    </script>
   </body>
 
 </html>
