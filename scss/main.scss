@@ -1,74 +1,320 @@
-
 @use 'reset';
 @use 'variables';
 @use 'mixins';
 
-:root {
-	overscroll-behavior: none;
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.woff2") format("woff2-variations");
+  font-weight: 300 800;
+  font-stretch: 75% 100%;
 }
 
-nav {
-	display: flex;
-	flex-direction: row;
-	
+@font-face {
+  font-family: "Quantico";
+  src: url("../fonts/Quantico/Quantico-Bold.woff2") format("woff2");
+  font-weight: 700;
 }
 
-h1 {
-	@include mixins.h1;
+@font-face {
+  font-family: "Quantico-Light";
+  src: url("../fonts/Quantico/Quantico-Regular.woff2") format("woff2");
+  font-weight: 400;
 }
 
-h2 {
-	@include mixins.h2;
+.nav {
+  display: flex;
+  padding: 1.5rem 1.25rem;
+  justify-content: space-between;
+  color: variables.$hamburger-menu;
+
+  .logo {
+    width: 75%;
+  }
+
+  .hamburger {
+    width: 2.75rem;
+  }
 }
 
-p {
-	@include mixins.p;
+.hero-1 {
+  background-color: variables.$light-green-bg;
+  padding: 3.5rem 1.25rem 0;
+
+  h1 {
+    @include mixins.heading;
+    font-size: 2.25rem;
+    line-height: 1;
+    color: variables.$dark-brown-text;
+  }
+
+  p {
+    @include mixins.paragraph;
+    margin: 2rem 1rem 3rem;
+    color: variables.$dark-brown-text;
+    line-height: 1.35;
+    font-weight: 300;
+  }
 }
 
-.product-menu h1 {
-	color: variables.$dark-green-bg;
-}
-
-.product-menu p {
-	color: variables.$dark-brown-text;
-}
-
-.hero-2, .location-hours, .cta, .sub-footer {
-	color: variables.$white-color;
+button.order-online {
+  @include mixins.button;
+  margin: 0 auto 1.25rem;
+  background-color: variables.$dark-brown-button;
 }
 
 .hero-2 {
-	background: variables.$dark-brown-text url("../img/background/coffee-beans-bg.jpg") no-repeat center;
-	background-size: 65rem;
-}
+  background: variables.$dark-brown-text url('../img/backgrounds/coffee-beans-bg.jpg') center / 65rem no-repeat;
+  color: variables.$white-color;
 
-.hero-1 {
-	background-color: variables.$light-green-bg;
-}
+  h2 {
+    @include mixins.heading;
+    text-align: center;
+    font-size: 2rem;
+    padding: 4.5rem 3rem 3rem;
+  }
 
-.cta {
-	background-color: variables.$green-bg;
-}
-
-.location-hours, footer {
-	background-color: variables.$dark-green-bg;
-}
-
-.sub-footer {
-	background-color: variables.$darkest-green-bg;	
-}
-
-.hero-1 {
-	img {
-		@include mixins.paddings;
-
-	}
+  p {
+    @include mixins.paragraph;
+    padding: 0 3.25rem 7rem;
+    line-height: 1.5;
+    letter-spacing: .35px;
+    font-weight: 300;
+  }
 }
 
 .location-hours {
-	img {
-		padding: 0 2rem;
-		width: 100%;
-		margin: 0 auto;
-	}
+  background-color: variables.$dark-green-bg;
+  color: variables.$white-color;
+  text-align: center;
+  padding: 6rem 0 7.5rem;
+
+  h2 {
+    @include mixins.heading;
+    font-size: 2rem;
+  }
+
+  .contact {
+    font-weight: 300;
+
+
+    .address {
+      @include mixins.paragraph;
+      text-transform: uppercase;
+      padding: 2rem 0 0;
+    }
+
+    .email-phone {
+      @include mixins.paragraph;
+      padding: 1.5rem 0 3.5rem;
+    }
+  }
+}
+
+.store-info {
+  background-color: variables.$dark-green-bg;
+  color: variables.$white-color;
+  text-align: center;
+  padding-top: 4.5rem;
+
+  p {
+    @include mixins.paragraph;
+    padding: 1.5rem 2.5rem 4rem;
+    font-weight: 300;
+  }
+
+  .hours {
+    @include mixins.paragraph;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 2;
+    font-weight: 300;
+
+    .days {
+      padding-left: 4.25rem;
+    }
+
+    .times {
+      padding-left: 3.5rem;
+    }
+  }
+}
+
+.coffees {
+  text-align: center;
+
+  h2 {
+    @include mixins.heading;
+    font-size: 2rem;
+    padding: 5rem 1.25rem 1.25rem;
+    color: variables.$dark-green-bg;
+  }
+
+  p.sub {
+    @include mixins.paragraph;
+    padding: 0 1.75rem 4.5rem;
+    color: variables.$dark-brown-text;
+    font-weight: 350;
+  }
+
+  h3 {
+    @include mixins.menu;
+    padding: .5rem 1.25rem .5rem;
+  }
+
+  p.desc {
+    padding: 0 1.25rem 2.5rem;
+    @include mixins.paragraph;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 350;
+  }
+}
+
+
+
+.teas {
+  @extend .coffees;
+
+  p.sub {
+    padding-bottom: 8rem;
+  }
+
+  p.desc {
+    padding-bottom: 4rem;
+  }
+}
+
+.pastries-snacks {
+  @extend .teas;
+
+  .desc-last {
+    @include mixins.paragraph;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 350;
+    padding: 0 1.25rem 9rem;
+  }
+}
+
+.cta {
+  background-color: variables.$green-bg;
+  color: variables.$white-color;
+  padding: 0 2rem;
+
+  h2 {
+    @include mixins.heading;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 4rem 0 3rem;
+  }
+
+  p {
+    @include mixins.paragraph;
+    font-weight: 300;
+    font-size: 1.125rem;
+    padding-bottom: 4.5rem;
+    line-height: 1.5rem;
+  }
+}
+
+.email-signup {
+  padding-bottom: 5rem;
+
+  .label {
+    font-family: "Quantico-Light", monospace;
+    font-weight: 400;
+  }
+
+  .name-email {
+    width: 100%;
+    margin: .5rem 0 2.5rem;
+    padding: .5rem;
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    background-color: variables.$white-color;
+    color: variables.$dark-brown-text;
+    border-radius: 6px;
+    border: 2.5px solid grey;
+  }
+
+  ::placeholder {
+    opacity: 1 !important;
+  }
+
+  .join-now {
+    @include mixins.button;
+    margin: 0 auto;
+    padding: 1rem 3.8rem;
+    background-color: variables.$light-brown-button;
+    border: unset;
+  }
+}
+
+footer {
+  color: variables.$white-color;
+  background-color: variables.$dark-green-bg;
+}
+
+h2 {
+  @include mixins.heading;
+  font-size: 2rem;
+  padding: 2rem 3.5rem 1rem;
+}
+
+.location {
+  padding-top: 8rem;
+}
+
+.address,
+.email-phone,
+.sitemap>ul,
+.socials>p {
+  padding: 0 3.5rem 1.5rem;
+  @include mixins.paragraph;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.address,
+.sitemap>ul {
+  text-transform: uppercase;
+}
+
+ul>li:not(:last-child) {
+  padding-bottom: 1rem;
+}
+
+.socials-svg {
+  display: flex;
+  margin: 1rem 1.25rem 9rem;
+  justify-content: space-evenly;
+
+  img {
+    width: 3.5rem;
+  }
+}
+
+.sub-footer {
+  background-color: variables.$darkest-green-bg;
+  color: variables.$white-color;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 2.25rem 0;
+
+  img {
+    width: 10px;
+  }
+
+  p:last-child {
+    padding-top: 1rem; 
+  }
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }

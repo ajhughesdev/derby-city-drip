@@ -1,40 +1,32 @@
 @use "variables";
 
-@mixin paddings {
-	padding: 0 1.25rem;
-}
-
-@mixin centered {
-	display: flex;
-	width: 100%;
-	justify-content: center;
-	align-content: center;
-}
-
-@mixin h1 {
-  @include paddings; 
-  @include centered;
+@mixin heading {
   font-family: "Quantico", monospace;
-  font-weight: 700;
-  font-size: 2rem;
-  text-align: center;
   text-transform: uppercase;
 }
 
-@mixin h2 {
-  @include paddings; 
+@mixin menu {
   display: flex;
   font-family: "Quantico", monospace;
-  font-weight: 700;
   font-size: 1.5rem;
   justify-content: space-between;
   text-transform: uppercase;
   color: variables.$dark-brown-text;
 }
 
-@mixin p {
-  @include paddings; 
+@mixin paragraph {
   font-family: "Open Sans", sans-serif;
-  font-weight: 300;
   font-size: 1rem;
+  letter-spacing: .35px;
+}
+
+@mixin button {
+  padding: 1rem 2.15rem;
+  display: block;
+  border-radius: 10px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.45rem;
+  font-family: "Quantico-Light";
+  text-transform: uppercase;
 }
