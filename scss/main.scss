@@ -7,6 +7,12 @@
 	overscroll-behavior: none;
 }
 
+nav {
+	display: flex;
+	flex-direction: row;
+	
+}
+
 h1 {
 	@include mixins.h1;
 }
