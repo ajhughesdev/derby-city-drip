@@ -68,6 +68,7 @@
   justify-content: space-between;
   color: variables.$hamburger-menu;
   position: fixed;
+  width: 100%;
   background-color: variables.$white-color;
 
 
@@ -372,3 +373,4 @@ a:hover {
   cursor: pointer;
   text-decoration: underline;
 }
+

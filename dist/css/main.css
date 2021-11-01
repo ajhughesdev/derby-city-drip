@@ -92,6 +92,7 @@ textarea {
   justify-content: space-between;
   color: #271911;
   position: fixed;
+  width: 100%;
   background-color: white;
 }
 #nav .logo {
