@@ -19,180 +19,189 @@
   </head>
 
   <body>
-    <header class="nav">
+    <header id="nav">
       <img src="img/svgs/derbycitydrip-logo.svg" alt="" class="logo" />
       <span onclick="openNav()" style="cursor: pointer">
         <img src="img/svgs/hamburger.svg" alt="" class="hamburger" />
       </span>
+      <div id="top-nav">
+        <a href="#">home</a>
+        <a href="#">location</a>
+        <a href="#">menu</a>
+        <a href="#">contact</a>
+      </div>
     </header>
-    <section class="hero">
-      <div class="hero-1">
-        <h1>experience the best cup in town</h1>
-        <p>Single origin mazagran, half and half robust pumpkin spice aged con panna. Sugar shop at a single shot
-          steamed half and half.</p>
-        <a href="#"><button class="order-online" type="button" autofocus>order online</button></a>
-        <span class="cup">
-          <img src="img/backgrounds/coffee-hero-transparent-bg.png" alt="cup of coffee"
-            class="coffee-hero-transparent-bg" style="margin-bottom: -4.75px" />
-        </span>
-      </div>
-      <div class="hero-2">
-        <h2>our finely roasted coffees</h2>
-        <p>Flavour sit brewed irish qui roast americano mocha single shot affogato. Aged, steamed roast white saucer
-          aroma decaffeinated. Caramelization skinny brewed, foam extra eu latte cream grounds to go.</p>
-      </div>
-    </section>
-    <section class="location-hours">
-      <div class="contact">
-        <h2>location</h2>
-        <div class="address">
-          <p>1234 w. main st.</p>
-          <p>louisville, ky 40213</p>
+    <div id="main" onclick="closeNav()">
+      <section class="hero">
+        <div class="hero-1">
+          <h1>experience the best cup in town</h1>
+          <p>Single origin mazagran, half and half robust pumpkin spice aged con panna. Sugar shop at a single shot
+            steamed half and half.</p>
+          <a href="#"><button class="order-online" type="button" autofocus>order online</button></a>
+          <span class="cup">
+            <img src="img/backgrounds/coffee-hero-transparent-bg.png" alt="cup of coffee"
+              class="coffee-hero-transparent-bg" style="margin-bottom: -4.75px" />
+          </span>
         </div>
-        <div class="email-phone">
-          <p>P: 502-555-5555</p>
-          <p>E: hello@derbycitydrip.com</p>
+        <div class="hero-2">
+          <h2>our finely roasted coffees</h2>
+          <p>Flavour sit brewed irish qui roast americano mocha single shot affogato. Aged, steamed roast white saucer
+            aroma decaffeinated. Caramelization skinny brewed, foam extra eu latte cream grounds to go.</p>
         </div>
-        <img src="https://via.placeholder.com/300.png" alt="map" class="googleMap" />
-        <!-- <img width=" 300" class="googleMap"
+      </section>
+      <section class="location-hours">
+        <div class="contact">
+          <h2>location</h2>
+          <div class="address">
+            <p>1234 w. main st.</p>
+            <p>louisville, ky 40213</p>
+          </div>
+          <div class="email-phone">
+            <p>P: 502-555-5555</p>
+            <p>E: hello@derbycitydrip.com</p>
+          </div>
+          <img src="https://via.placeholder.com/300.png" alt="map" class="googleMap" />
+          <!-- <img width=" 300" class="googleMap"
             src="https://maps.googleapis.com/maps/api/staticmap?scale=4&size=300x300&maptype=roadmap&key={API+key}&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:%7C1234+w+Main+Street,+Louisville,+KY+40213"
             alt="Google Map of 1234 W Main Street, Louisville, KY 40213" /> -->
-      </div>
-      <div class="store-info">
-        <h2>hours</h2>
-        <p>These are our current hours, unforeseen circumstances may cause these to change.</p>
-        <table class="hours">
-          <tr>
-            <td class="days">sun:</td>
-            <td class="times">closed</td>
-          </tr>
-          <tr>
-            <td class="days">mon:</td>
-            <td class="times">6am - 10pm</td>
-          </tr>
-          <tr>
-            <td class="days">tue:</td>
-            <td class="times">6am - 10pm</td>
-          </tr>
-          <tr>
-            <td class="days">wed:</td>
-            <td class="times">6am - 10pm</td>
-          </tr>
-          <tr>
-            <td class="days">thur:</td>
-            <td class="times">6am - 10pm</td>
-          </tr>
-          <tr>
-            <td class="days">fri:</td>
-            <td class="times">6am - 12pm</td>
-          </tr>
-          <tr>
-            <td class="days">sat:</td>
-            <td class="times">6am - 12pm</td>
-          </tr>
-        </table>
-      </div>
-    </section>
-    <section class="product-menu">
-      <div class="coffees">
-        <h2>coffees</h2>
-        <p class="sub">Flavour sit brewed irish qui roast americano mocha single shot affogato. Aged, steamed roast
-          white saucer aroma decaffeinated. Caramelization skinny brewed, foam extra eu latte cream grounds to go
-          plunger pot. </p>
-        <h3><span class="left">coffee of the day</span><span class="right">4.99</span></h3>
-        <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
-        <h3><span class="left">cafe au lait</span><span class="right">3.99</span></h3>
-        <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
-        <h3><span class="left">red eye</span><span class="right">6.99</span></h3>
-        <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
-        <h3><span class="left">cold brew iced</span><span class="right">4.99</span></h3>
-        <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
-        <h3><span class="left">fair trade mocha</span><span class="right">4.99</span></h3>
-        <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
-        <h3><span class="left">beekeeper</span><span class="right">4.99</span></h3>
-        <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
-        <h3><span class="left">mocha</span><span class="right">3.99</span></h3>
-        <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
-      </div>
-      <div class="teas">
-        <h2>teas</h2>
-        <p class="sub">Flavour sit brewed irish qui roast americano mocha single shot affogato. Aged, steamed roast
-          white saucer aroma decaffeinated. Caramelization skinny brewed, foam extra eu latte cream grounds to go
-          plunger pot. </p>
-        <h3><span class="left">loose-leaf tea</span><span class="right">4.99</span></h3>
-        <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
-        <h3><span class="left">tea au lait</span><span class="right">3.99</span></h3>
-        <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
-        <h3><span class="left">iced</span><span class="right">6.99</span></h3>
-        <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
-        <h3><span class="left">matcha latte</span><span class="right">4.99</span></h3>
-        <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
-      </div>
-      <div class="pastries-snacks">
-        <h2>pastries / snacks</h2>
-        <p class="sub">Flavour sit brewed irish qui roast americano mocha single shot affogato. Aged, steamed roast
-          white saucer aroma decaffeinated. Caramelization skinny brewed, foam extra eu latte cream grounds to go
-          plunger pot. </p>
-        <h3><span class="left">donut</span><span class="right">1.99</span></h3>
-        <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
-        <h3><span class="left">cookie - 3 pack</span><span class="right">3.99</span></h3>
-        <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
-        <h3><span class="left">scone</span><span class="right">2.99</span></h3>
-        <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
-        <h3><span class="left">brownie</span><span class="right">2.99</span></h3>
-        <p class="desc-last">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
-      </div>
-    </section>
-    <section class="cta">
-      <h2>join the dcd coffee club!</h2>
-      <p> Steamed roast white saucer aroma decaffeinated. Caramelization skinny brewed, foam extra eu latte cream
-        grounds to go plunger pot.</p>
-      <form action="email_signup.php" target="email-welcome" method="post" class="email-signup">
-        <label for="name" class="label">NAME:</label><br>
-        <input class="name-email" type="text" id="name" name="name" placeholder="john doe" required /><br>
-        <label for="email" class="label">EMAIL:</label><br>
-        <input class="name-email" type="email" id="email" name="email" placeholder="johndoe@gmail.com" required /><br>
-        <a href="#"><button class="join-now" type="submit">join now</button></a>
-      </form>
-    </section>
-    <footer>
-      <section>
-        <h2 class="location">location</h2>
-        <div class="address">
-          <p>1234 w. main st.</p>
-          <p>louisville, ky 40213</p>
         </div>
-        <div class="email-phone">
-          <p>P: 502-555-5555</p>
-          <p>E: hello@derbycitydrip.com</p>
+        <div class="store-info">
+          <h2>hours</h2>
+          <p>These are our current hours, unforeseen circumstances may cause these to change.</p>
+          <table class="hours">
+            <tr>
+              <td class="days">sun:</td>
+              <td class="times">closed</td>
+            </tr>
+            <tr>
+              <td class="days">mon:</td>
+              <td class="times">6am - 10pm</td>
+            </tr>
+            <tr>
+              <td class="days">tue:</td>
+              <td class="times">6am - 10pm</td>
+            </tr>
+            <tr>
+              <td class="days">wed:</td>
+              <td class="times">6am - 10pm</td>
+            </tr>
+            <tr>
+              <td class="days">thur:</td>
+              <td class="times">6am - 10pm</td>
+            </tr>
+            <tr>
+              <td class="days">fri:</td>
+              <td class="times">6am - 12pm</td>
+            </tr>
+            <tr>
+              <td class="days">sat:</td>
+              <td class="times">6am - 12pm</td>
+            </tr>
+          </table>
         </div>
       </section>
-      <section class="sitemap">
-        <h2>sitemap</h2>
-        <ul>
-          <li><a href="#">home<a></li>
-          <li><a href="#">location</a></li>
-          <li><a href="#">menu</a></li>
-          <li><a href="#">contact</a></li>
-        </ul>
-      </section>
-      <section class="socials">
-        <h2>socials</h2>
-        <p>Please join us for all the latest announcements via our social network.</p>
-        <div class="socials-svg">
-          <a href="#"><img src="img/svgs/facebook-circle.svg" /></a>
-          <a href="#"><img src="img/svgs/twitter-circle.svg" /></a>
-          <a href="#"><img src="img/svgs/linkedin-circle.svg" /></a>
-          <a href="#"><img src="img/svgs/google-plus-circle.svg" /></a>
+      <section class="product-menu">
+        <div class="coffees">
+          <h2>coffees</h2>
+          <p class="sub">Flavour sit brewed irish qui roast americano mocha single shot affogato. Aged, steamed roast
+            white saucer aroma decaffeinated. Caramelization skinny brewed, foam extra eu latte cream grounds to go
+            plunger pot. </p>
+          <h3><span class="left">coffee of the day</span><span class="right">4.99</span></h3>
+          <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+          <h3><span class="left">cafe au lait</span><span class="right">3.99</span></h3>
+          <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+          <h3><span class="left">red eye</span><span class="right">6.99</span></h3>
+          <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+          <h3><span class="left">cold brew iced</span><span class="right">4.99</span></h3>
+          <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+          <h3><span class="left">fair trade mocha</span><span class="right">4.99</span></h3>
+          <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+          <h3><span class="left">beekeeper</span><span class="right">4.99</span></h3>
+          <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+          <h3><span class="left">mocha</span><span class="right">3.99</span></h3>
+          <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+        </div>
+        <div class="teas">
+          <h2>teas</h2>
+          <p class="sub">Flavour sit brewed irish qui roast americano mocha single shot affogato. Aged, steamed roast
+            white saucer aroma decaffeinated. Caramelization skinny brewed, foam extra eu latte cream grounds to go
+            plunger pot. </p>
+          <h3><span class="left">loose-leaf tea</span><span class="right">4.99</span></h3>
+          <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+          <h3><span class="left">tea au lait</span><span class="right">3.99</span></h3>
+          <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+          <h3><span class="left">iced</span><span class="right">6.99</span></h3>
+          <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+          <h3><span class="left">matcha latte</span><span class="right">4.99</span></h3>
+          <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+        </div>
+        <div class="pastries-snacks">
+          <h2>pastries / snacks</h2>
+          <p class="sub">Flavour sit brewed irish qui roast americano mocha single shot affogato. Aged, steamed roast
+            white saucer aroma decaffeinated. Caramelization skinny brewed, foam extra eu latte cream grounds to go
+            plunger pot. </p>
+          <h3><span class="left">donut</span><span class="right">1.99</span></h3>
+          <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+          <h3><span class="left">cookie - 3 pack</span><span class="right">3.99</span></h3>
+          <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+          <h3><span class="left">scone</span><span class="right">2.99</span></h3>
+          <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+          <h3><span class="left">brownie</span><span class="right">2.99</span></h3>
+          <p class="desc-last">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
         </div>
       </section>
-      <section class="sub-footer">
-        <p><img src="img/svgs/copyright-symbol.svg" /> copyright <script>
-            document.write(new Date().getFullYear())
-          </script> derby city drip, llc </p>
-        <p><a>privacy policy</a></p>
+      <section class="cta">
+        <h2>join the dcd coffee club!</h2>
+        <p> Steamed roast white saucer aroma decaffeinated. Caramelization skinny brewed, foam extra eu latte cream
+          grounds to go plunger pot.</p>
+        <form id="email-signup-form" action="email_signup.php" target="email-welcome" method="post"
+          class="email-signup">
+          <label for="name" class="label">NAME:</label><br>
+          <input class="name-email" type="text" id="name" name="name" placeholder="john doe" required /><br>
+          <label for="email" class="label">EMAIL:</label><br>
+          <input class="name-email" type="email" id="email" name="email" placeholder="johndoe@gmail.com" required /><br>
+          <a href="#"><button class="join-now" type="submit">join now</button></a>
+        </form>
       </section>
-    </footer>
+      <footer>
+        <section>
+          <h2 class="location">location</h2>
+          <div class="address">
+            <p>1234 w. main st.</p>
+            <p>louisville, ky 40213</p>
+          </div>
+          <div class="email-phone">
+            <p>P: 502-555-5555</p>
+            <p>E: hello@derbycitydrip.com</p>
+          </div>
+        </section>
+        <section class="sitemap">
+          <h2>sitemap</h2>
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">location</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </section>
+        <section class="socials">
+          <h2>socials</h2>
+          <p>Please join us for all the latest announcements via our social network.</p>
+          <div class="socials-svg">
+            <a href="#"><img src="img/svgs/facebook-circle.svg" /></a>
+            <a href="#"><img src="img/svgs/twitter-circle.svg" /></a>
+            <a href="#"><img src="img/svgs/linkedin-circle.svg" /></a>
+            <a href="#"><img src="img/svgs/google-plus-circle.svg" /></a>
+          </div>
+        </section>
+        <section class="sub-footer">
+          <p><img src="img/svgs/copyright-symbol.svg" /> copyright <script>
+              document.write(new Date().getFullYear())
+            </script> derby city drip, llc </p>
+          <p><a href="#">privacy policy</a></p>
+        </section>
+      </footer>
+    </div>
     <script src=" js/main.js" async defer>
     </script>
   </body>

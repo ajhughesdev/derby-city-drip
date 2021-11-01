@@ -10,22 +10,66 @@
 }
 
 @font-face {
-  font-family: "Quantico";
+  font-family: "Quantico-Bold";
   src: url("../fonts/Quantico/Quantico-Bold.woff2") format("woff2");
   font-weight: 700;
 }
 
 @font-face {
-  font-family: "Quantico-Light";
+  font-family: "Quantico-Regular";
   src: url("../fonts/Quantico/Quantico-Regular.woff2") format("woff2");
   font-weight: 400;
 }
 
-.nav {
+
+#top-nav {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 85px;
+  left: 0;
+  right: 0;
+  background-color: variables.$dark-green-bg;
+  overflow-y: hidden;
+  transition: 500ms;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  color: variables.$white-color;
+  vertical-align: middle;
+  font-size: 1.5rem;
+  font-family: "Quantico-Regular";
+  text-transform: uppercase;
+
+
+  a {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    transition: 300ms;
+    height: 100%;
+    margin: auto;
+  }
+
+  a:hover {
+    background-color: variables.$menu-active-bg;
+    transition: 300ms;
+  }
+}
+
+#main {
+  transition: padding-top 500ms;
+}
+
+#nav {
   display: flex;
   padding: 1.5rem 1.25rem;
   justify-content: space-between;
   color: variables.$hamburger-menu;
+  position: fixed;
+  background-color: variables.$white-color;
+
 
   .logo {
     width: 75%;
@@ -36,9 +80,19 @@
   }
 }
 
+// @media screen and (max-height: 450px) {
+//   #top-nav {
+//     padding-top: 15px;
+//   }
+
+//   #top-nav a {
+//     font-size: 18px;
+//   }
+//}
+
 .hero-1 {
   background-color: variables.$light-green-bg;
-  padding: 3.5rem 1.25rem 0;
+  padding: 8.75rem 1.25rem 0;
 
   h1 {
     @include mixins.heading;
@@ -221,7 +275,7 @@ button.order-online {
   padding-bottom: 5rem;
 
   .label {
-    font-family: "Quantico-Light", monospace;
+    font-family: "Quantico-Regular", monospace;
     font-weight: 400;
   }
 
@@ -310,7 +364,7 @@ ul>li:not(:last-child) {
   }
 
   p:last-child {
-    padding-top: 1rem; 
+    padding-top: 1rem;
   }
 }
 
