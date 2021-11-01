@@ -49,7 +49,7 @@
 
   p {
     @include mixins.paragraph;
-    margin: 2rem 1rem 3rem;
+    margin: 2rem 1rem 3.5rem;
     color: variables.$dark-brown-text;
     line-height: 1.35;
     font-weight: 300;
