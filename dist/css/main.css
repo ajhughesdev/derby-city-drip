@@ -34,7 +34,7 @@ textarea {
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Open-Sans";
   src: url("../fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.woff2") format("woff2-variations");
   font-weight: 300 800;
   font-stretch: 75% 100%;
@@ -49,6 +49,29 @@ textarea {
   src: url("../fonts/Quantico/Quantico-Regular.woff2") format("woff2");
   font-weight: 400;
 }
+:root {
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
+}
+
+#banner {
+  color: #271911;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  height: 85px;
+  padding: 1.5rem 1.25rem;
+  justify-content: space-between;
+}
+#banner .logo {
+  width: 75%;
+}
+#banner .hamburger {
+  width: 2.75rem;
+}
+
 #top-nav {
   height: 0;
   width: 100%;
@@ -59,47 +82,26 @@ textarea {
   right: 0;
   background-color: #212d31;
   overflow-y: hidden;
-  transition: 500ms;
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   color: white;
-  vertical-align: middle;
   font-size: 1.5rem;
   font-family: "Quantico-Regular";
   text-transform: uppercase;
+  transition: height linear 450ms;
 }
 #top-nav a {
   justify-content: center;
   align-items: center;
   display: flex;
   width: 100%;
-  transition: 300ms;
   height: 100%;
   margin: auto;
+  transition: 25ms background-color 150ms;
 }
-#top-nav a:hover {
+#top-nav :hover {
   background-color: #b17c4e;
-  transition: 300ms;
-}
-
-#main {
-  transition: padding-top 500ms;
-}
-
-#nav {
-  display: flex;
-  padding: 1.5rem 1.25rem;
-  justify-content: space-between;
-  color: #271911;
-  position: fixed;
-  width: 100%;
-  background-color: white;
-}
-#nav .logo {
-  width: 75%;
-}
-#nav .hamburger {
-  width: 2.75rem;
+  transition: background-color 450ms;
 }
 
 .hero-1 {
@@ -121,6 +123,11 @@ textarea {
   color: #271911;
   line-height: 1.35;
   font-weight: 300;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 button.order-online {
@@ -302,7 +309,7 @@ button.order-online {
   margin: 0.5rem 0 2.5rem;
   padding: 0.5rem;
   font-size: 1rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Open-Sans", sans-serif;
   text-transform: uppercase;
   background-color: white;
   color: #271911;
@@ -385,7 +392,7 @@ ul > li:not(:last-child) {
 .sub-footer {
   background-color: #0b1a1e;
   color: white;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open-Sans", sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
@@ -397,9 +404,4 @@ ul > li:not(:last-child) {
 }
 .sub-footer p:last-child {
   padding-top: 1rem;
-}
-
-a:hover {
-  cursor: pointer;
-  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */

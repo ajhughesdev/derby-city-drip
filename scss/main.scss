@@ -3,7 +3,7 @@
 @use 'mixins';
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Open-Sans";
   src: url("../fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.woff2") format("woff2-variations");
   font-weight: 300 800;
   font-stretch: 75% 100%;
@@ -21,6 +21,29 @@
   font-weight: 400;
 }
 
+:root {
+  overscroll-behavior: none;
+}
+
+#banner {
+  color: variables.$hamburger-menu;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: variables.$white-color;
+  display: flex;
+  height: 85px;
+  padding: 1.5rem 1.25rem;
+  justify-content: space-between;
+
+  .logo {
+    width: 75%;
+  }
+
+  .hamburger {
+    width: 2.75rem;
+  }
+}
 
 #top-nav {
   height: 0;
@@ -32,64 +55,29 @@
   right: 0;
   background-color: variables.$dark-green-bg;
   overflow-y: hidden;
-  transition: 500ms;
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   color: variables.$white-color;
-  vertical-align: middle;
   font-size: 1.5rem;
   font-family: "Quantico-Regular";
   text-transform: uppercase;
-
+  transition: height linear 450ms;
 
   a {
     justify-content: center;
     align-items: center;
     display: flex;
     width: 100%;
-    transition: 300ms;
     height: 100%;
     margin: auto;
+    transition: 25ms background-color 150ms;
   }
 
-  a:hover {
+  :hover {
     background-color: variables.$menu-active-bg;
-    transition: 300ms;
+    transition: background-color 450ms;
   }
 }
-
-#main {
-  transition: padding-top 500ms;
-}
-
-#nav {
-  display: flex;
-  padding: 1.5rem 1.25rem;
-  justify-content: space-between;
-  color: variables.$hamburger-menu;
-  position: fixed;
-  width: 100%;
-  background-color: variables.$white-color;
-
-
-  .logo {
-    width: 75%;
-  }
-
-  .hamburger {
-    width: 2.75rem;
-  }
-}
-
-// @media screen and (max-height: 450px) {
-//   #top-nav {
-//     padding-top: 15px;
-//   }
-
-//   #top-nav a {
-//     font-size: 18px;
-//   }
-//}
 
 .hero-1 {
   background-color: variables.$light-green-bg;
@@ -109,6 +97,11 @@
     line-height: 1.35;
     font-weight: 300;
   }
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 button.order-online {
@@ -225,8 +218,6 @@ button.order-online {
   }
 }
 
-
-
 .teas {
   @extend .coffees;
 
@@ -285,7 +276,7 @@ button.order-online {
     margin: .5rem 0 2.5rem;
     padding: .5rem;
     font-size: 1rem;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "Open-Sans", sans-serif;
     text-transform: uppercase;
     background-color: variables.$white-color;
     color: variables.$dark-brown-text;
@@ -353,7 +344,7 @@ ul>li:not(:last-child) {
 .sub-footer {
   background-color: variables.$darkest-green-bg;
   color: variables.$white-color;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open-Sans", sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
@@ -368,9 +359,3 @@ ul>li:not(:last-child) {
     padding-top: 1rem;
   }
 }
-
-a:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
