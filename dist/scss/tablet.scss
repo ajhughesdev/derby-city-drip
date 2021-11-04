@@ -1,0 +1,164 @@
+@use 'reset';
+@use 'variables';
+@use 'mixins';
+
+@font-face {
+  font-family: "Open-Sans";
+  src: url("../fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.woff2") format("woff2-variations");
+  font-weight: 300 800;
+  font-stretch: 75% 100%;
+}
+
+@font-face {
+  font-family: "Quantico-Bold";
+  src: url("../fonts/Quantico/Quantico-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Quantico-Regular";
+  src: url("../fonts/Quantico/Quantico-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+:root {
+  overscroll-behavior: none;
+}
+
+.hamburger,
+.order-online,
+.coffee-hero-transparent-bg {
+  display: none;
+}
+
+a:any-link {
+  cursor: pointer;
+
+  & :hover {
+    text-decoration: underline;
+  }
+}
+
+header {
+  #banner {
+    color: variables.$hamburger-menu;
+    display: flex;
+    background-color: variables.$light-green-bg;
+
+    .logo {
+      width: fit-content;
+      margin: 4rem auto 0;
+    }
+  }
+
+  #top-nav {
+    display: flex;
+    background-color: variables.$light-green-bg;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: space-between;
+    padding: 2rem 6.5rem 0;
+    font-family: "Quantico-Bold";
+    text-transform: uppercase;
+  }
+}
+
+.hero-1 {
+  padding: 0 7rem;
+  // background: variables.$light-green-bg url("../img/backgrounds/coffee-hero-bg.jpg") center right no-repeat;
+
+  h1 {
+    @include mixins.heading;
+    font-size: 2.65rem;
+    padding-top: 4rem;
+    color: variables.$dark-brown-text;
+  }
+
+  p {
+    @include mixins.paragraph;
+    font-weight: 375;
+    font-size: 1.125rem;
+    font-stretch: 100%;
+    line-height: 1.35;
+    padding: .5rem 6rem 0 0;
+  }
+
+  button.view-menu {
+    position: relative;
+    @include mixins.button;
+    margin: 2rem 0 0;
+    padding: 1rem 3.5rem;
+    background-color: variables.$dark-brown-button;
+    z-index: 2;
+  }
+
+  .coffee-hero-transparent-bg-full {
+    display: flex;
+    margin: 0 auto -4rem;
+    z-index: 1;
+    width: 85%;
+    transform: translateY(-3.5rem);
+  }
+}
+
+.hero-2 {
+  padding: 12rem 7rem 8rem;
+  background: variables.$dark-brown-text url('../img/backgrounds/coffee-beans-bg.jpg') center / 120rem no-repeat;
+  color: variables.$white-color;
+
+  h2 {
+    @include mixins.heading;
+    text-align: center;
+    font-size: 2.65rem;
+  }
+
+  p {
+    @include mixins.paragraph;
+    line-height: 1.5;
+    letter-spacing: .35px;
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding-top: 2.5rem;
+  }
+}
+
+.location-hours {
+  background-color: variables.$dark-green-bg;
+  color: variables.$white-color;
+  padding: 8rem 3.5rem;
+
+  h2 {
+    @include mixins.heading;
+    font-size: 2rem;
+  }
+
+  p {
+    @include mixins.paragraph;
+    font-weight: 300;
+  }
+}
+
+.contact {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "address email-phone"
+    "img img";
+  grid-template-columns: auto auto;
+
+  .address {
+    text-transform: uppercase;
+    padding: 2rem 0 3.5rem;
+    grid-area: address;
+  }
+
+  .email-phone {
+    padding: 2rem 6rem;
+    grid-area: email-phone;
+  }
+
+  img {
+    width: 100%;
+    grid-area: img;
+  }
+}
