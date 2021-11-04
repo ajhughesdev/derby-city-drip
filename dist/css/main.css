@@ -55,7 +55,9 @@ textarea {
 }
 
 .coffee-hero-transparent-bg-full,
-.tablet-add {
+.tablet-add,
+.googleMap-tab,
+.view-menu {
   display: none;
 }
 
@@ -93,7 +95,7 @@ textarea {
   font-size: 1.5rem;
   font-family: "Quantico-Regular";
   text-transform: uppercase;
-  transition: height linear 450ms;
+  transition: height ease-in 450ms;
 }
 #top-nav a {
   justify-content: center;
@@ -182,13 +184,14 @@ button.order-online {
 }
 .location-hours .contact {
   font-weight: 300;
+  padding-bottom: 3.5rem;
 }
 .location-hours .contact .address {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   text-transform: uppercase;
-  padding: 2rem 0 0;
+  padding: 2rem;
 }
 .location-hours .contact .email-phone {
   font-family: "Open Sans", sans-serif;
@@ -321,9 +324,6 @@ button.order-online {
   border-radius: 6px;
   border: 2.5px solid grey;
 }
-.email-signup ::-webkit-input-placeholder {
-  opacity: 1 !important;
-}
 .email-signup ::-moz-placeholder {
   opacity: 1 !important;
 }
@@ -352,22 +352,19 @@ footer {
   color: white;
   background-color: #212d31;
 }
-
-h2 {
+footer h2 {
   font-family: "Quantico-Bold", monospace;
   text-transform: uppercase;
   font-size: 2rem;
   padding: 2rem 3.5rem 1rem;
 }
-
-.location {
+footer .location {
   padding-top: 8rem;
 }
-
-.address,
-.email-phone,
-.sitemap > ul,
-.socials > p {
+footer .address,
+footer .email-phone,
+footer .sitemap > ul,
+footer .socials > p {
   padding: 0 3.5rem 1.5rem;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
@@ -375,22 +372,19 @@ h2 {
   font-weight: 300;
   font-size: 1rem;
 }
-
-.address,
-.sitemap > ul {
+footer .address,
+footer .sitemap > ul {
   text-transform: uppercase;
 }
-
-ul > li:not(:last-child) {
+footer ul > li:not(:last-child) {
   padding-bottom: 1rem;
 }
-
-.socials-svg {
+footer .socials-svg {
   display: flex;
   margin: 1rem 1.25rem 9rem;
   justify-content: space-evenly;
 }
-.socials-svg img {
+footer .socials-svg img {
   width: 3.5rem;
 }
 

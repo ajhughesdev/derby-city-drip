@@ -26,7 +26,9 @@
 }
 
 .coffee-hero-transparent-bg-full,
-.tablet-add {
+.tablet-add,
+.googleMap-tab,
+.view-menu {
   display: none;
 }
 
@@ -66,7 +68,7 @@
   font-size: 1.5rem;
   font-family: "Quantico-Regular";
   text-transform: uppercase;
-  transition: height linear 450ms;
+  transition: height ease-in 450ms;
 
   a {
     justify-content: center;
@@ -148,11 +150,12 @@ button.order-online {
 
   .contact {
     font-weight: 300;
+    padding-bottom: 3.5rem;
 
     .address {
       @include mixins.paragraph;
       text-transform: uppercase;
-      padding: 2rem 0 0;
+      padding: 2rem;
     }
 
     .email-phone {
@@ -304,44 +307,45 @@ button.order-online {
 footer {
   color: variables.$white-color;
   background-color: variables.$dark-green-bg;
-}
 
-h2 {
-  @include mixins.heading;
-  font-size: 2rem;
-  padding: 2rem 3.5rem 1rem;
-}
 
-.location {
-  padding-top: 8rem;
-}
+  h2 {
+    @include mixins.heading;
+    font-size: 2rem;
+    padding: 2rem 3.5rem 1rem;
+  }
 
-.address,
-.email-phone,
-.sitemap>ul,
-.socials>p {
-  padding: 0 3.5rem 1.5rem;
-  @include mixins.paragraph;
-  font-weight: 300;
-  font-size: 1rem;
-}
+  .location {
+    padding-top: 8rem;
+  }
 
-.address,
-.sitemap>ul {
-  text-transform: uppercase;
-}
+  .address,
+  .email-phone,
+  .sitemap>ul,
+  .socials>p {
+    padding: 0 3.5rem 1.5rem;
+    @include mixins.paragraph;
+    font-weight: 300;
+    font-size: 1rem;
+  }
 
-ul>li:not(:last-child) {
-  padding-bottom: 1rem;
-}
+  .address,
+  .sitemap>ul {
+    text-transform: uppercase;
+  }
 
-.socials-svg {
-  display: flex;
-  margin: 1rem 1.25rem 9rem;
-  justify-content: space-evenly;
+  ul>li:not(:last-child) {
+    padding-bottom: 1rem;
+  }
 
-  img {
-    width: 3.5rem;
+  .socials-svg {
+    display: flex;
+    margin: 1rem 1.25rem 9rem;
+    justify-content: space-evenly;
+
+    img {
+      width: 3.5rem;
+    }
   }
 }
 

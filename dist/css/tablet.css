@@ -57,7 +57,8 @@ textarea {
 .hamburger,
 .order-online,
 .coffee-hero-transparent-bg,
-.tablet-del {
+.tablet-del,
+.googleMap {
   display: none;
 }
 
@@ -139,8 +140,7 @@ header #top-nav {
   margin: 0 auto -4rem;
   z-index: 1;
   width: 85%;
-  -webkit-transform: translateY(-3.5rem);
-          transform: translateY(-3.5rem);
+  transform: translateY(-3.5rem);
 }
 
 .hero-2 {
@@ -168,7 +168,7 @@ header #top-nav {
 .location-hours {
   background-color: #212d31;
   color: white;
-  padding: 8rem 3.5rem 2rem;
+  padding: 7rem 3.5rem 2rem;
 }
 .location-hours h2 {
   font-family: "Quantico-Bold", monospace;
@@ -179,27 +179,24 @@ header #top-nav {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
-  font-weight: 300;
+  font-weight: 4000;
 }
-
-.contact {
+.location-hours .contact {
   display: grid;
-  width: 100%;
-  grid-template-areas: "address email-phone" "img img";
-  grid-template-columns: auto auto;
-}
-.contact .address {
-  text-transform: uppercase;
+  grid-template-columns: 1fr 1fr;
   padding: 2rem 0 3.5rem;
-  grid-area: address;
 }
-.contact .email-phone {
-  padding: 2rem 6rem;
-  grid-area: email-phone;
+.location-hours .contact .address {
+  text-transform: uppercase;
 }
-.contact img {
+.location-hours .contact .email-phone {
+  justify-self: start;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+.location-hours .contact img {
+  display: flex;
   width: 100%;
-  grid-area: img;
 }
 
 .store-info h2 {
@@ -337,9 +334,6 @@ header #top-nav {
   border-radius: 6px;
   border: 2.5px solid grey;
 }
-.email-signup ::-webkit-input-placeholder {
-  opacity: 1 !important;
-}
 .email-signup ::-moz-placeholder {
   opacity: 1 !important;
 }
@@ -368,22 +362,19 @@ footer {
   color: white;
   background-color: #212d31;
 }
-
-h2 {
+footer h2 {
   font-family: "Quantico-Bold", monospace;
   text-transform: uppercase;
   font-size: 2rem;
   padding: 2.5rem 5rem 1.5rem;
 }
-
-.location {
+footer .location {
   padding-top: 10rem;
 }
-
-.address,
-.email-phone,
-.sitemap > ul,
-.socials > p {
+footer .address,
+footer .email-phone,
+footer .sitemap > ul,
+footer .socials > p {
   padding: 0 20rem 1.5rem 5rem;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
@@ -391,22 +382,19 @@ h2 {
   font-weight: 300;
   font-size: 1.115rem;
 }
-
-.address,
-.sitemap > ul {
+footer .address,
+footer .sitemap > ul {
   text-transform: uppercase;
 }
-
-ul > li:not(:last-child) {
+footer ul > li:not(:last-child) {
   padding-bottom: 1rem;
 }
-
-.socials-svg {
+footer .socials-svg {
   display: flex;
   margin: 1rem 22rem 9rem 4rem;
   justify-content: space-evenly;
 }
-.socials-svg img {
+footer .socials-svg img {
   width: 3.5rem;
 }
 

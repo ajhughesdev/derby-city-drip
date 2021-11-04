@@ -28,7 +28,8 @@
 .hamburger,
 .order-online,
 .coffee-hero-transparent-bg,
-.tablet-del {
+.tablet-del,
+.googleMap {
   display: none;
 }
 
@@ -39,7 +40,6 @@ a:any-link {
 a:hover {
   text-decoration: underline;
 }
-
 
 header {
   #banner {
@@ -67,7 +67,6 @@ header {
 
 .hero-1 {
   padding: 0 7rem;
-  // background: variables.$light-green-bg url("../img/backgrounds/coffee-hero-bg.jpg") center right no-repeat;
 
   h1 {
     @include mixins.heading;
@@ -127,7 +126,8 @@ header {
 .location-hours {
   background-color: variables.$dark-green-bg;
   color: variables.$white-color;
-  padding: 8rem 3.5rem 2rem;
+  padding: 7rem 3.5rem 2rem;
+
 
   h2 {
     @include mixins.heading;
@@ -136,32 +136,29 @@ header {
 
   p {
     @include mixins.paragraph;
-    font-weight: 300;
+    font-weight: 4000;
   }
-}
 
-.contact {
-  display: grid;
-  width: 100%;
-  grid-template-areas:
-    "address email-phone"
-    "img img";
-  grid-template-columns: auto auto;
-
-  .address {
-    text-transform: uppercase;
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 2rem 0 3.5rem;
-    grid-area: address;
-  }
 
-  .email-phone {
-    padding: 2rem 6rem;
-    grid-area: email-phone;
-  }
+    .address {
+      text-transform: uppercase;
+    }
 
-  img {
-    width: 100%;
-    grid-area: img;
+    .email-phone {
+      justify-self: start;
+      align-items: center;
+      margin-left: 1.5rem;
+    }
+
+    img {
+      display: flex;
+      width: 100%;
+      // margin: auto;
+    }
   }
 }
 
@@ -321,44 +318,44 @@ header {
 footer {
   color: variables.$white-color;
   background-color: variables.$dark-green-bg;
-}
 
-h2 {
-  @include mixins.heading;
-  font-size: 2rem;
-  padding: 2.5rem 5rem 1.5rem;
-}
+  h2 {
+    @include mixins.heading;
+    font-size: 2rem;
+    padding: 2.5rem 5rem 1.5rem;
+  }
 
-.location {
-  padding-top: 10rem;
-}
+  .location {
+    padding-top: 10rem;
+  }
 
-.address,
-.email-phone,
-.sitemap>ul,
-.socials>p {
-  padding: 0 20rem 1.5rem 5rem;
-  @include mixins.paragraph;
-  font-weight: 300;
-  font-size: 1.115rem;
-}
+  .address,
+  .email-phone,
+  .sitemap>ul,
+  .socials>p {
+    padding: 0 20rem 1.5rem 5rem;
+    @include mixins.paragraph;
+    font-weight: 300;
+    font-size: 1.115rem;
+  }
 
-.address,
-.sitemap>ul {
-  text-transform: uppercase;
-}
+  .address,
+  .sitemap>ul {
+    text-transform: uppercase;
+  }
 
-ul>li:not(:last-child) {
-  padding-bottom: 1rem;
-}
+  ul>li:not(:last-child) {
+    padding-bottom: 1rem;
+  }
 
-.socials-svg {
-  display: flex;
-  margin: 1rem 22rem 9rem 4rem;
-  justify-content: space-evenly;
+  .socials-svg {
+    display: flex;
+    margin: 1rem 22rem 9rem 4rem;
+    justify-content: space-evenly;
 
-  img {
-    width: 3.5rem;
+    img {
+      width: 3.5rem;
+    }
   }
 }
 

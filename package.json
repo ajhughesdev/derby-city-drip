@@ -2,7 +2,6 @@
   "name": "derby-city-drip",
   "version": "1.0.0",
   "description": "source code for Code Louisville's Front-end Web Development Sept. 2021 cohort final project, a build out of a design by Don Hansen",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,15 +9,11 @@
     "type": "git",
     "url": "git+https://github.com/ajhughesdev/derby-city-drip.git"
   },
-  "author": "",
+  "author": "Andrew J Hughes",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ajhughesdev/derby-city-drip/issues"
-  },
   "homepage": "https://github.com/ajhughesdev/derby-city-drip#readme",
   "devDependencies": {
-    "autoprefixer": "^10.3.7",
-    "eslint": "^8.1.0"
+    "autoprefixer": "^10.3.7"
   },
   "dependencies": {
     "postcss": "^8.3.11"
