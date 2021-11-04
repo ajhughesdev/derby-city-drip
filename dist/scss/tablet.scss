@@ -27,7 +27,8 @@
 
 .hamburger,
 .order-online,
-.coffee-hero-transparent-bg {
+.coffee-hero-transparent-bg,
+.tablet-del {
   display: none;
 }
 
@@ -125,7 +126,7 @@ header {
 .location-hours {
   background-color: variables.$dark-green-bg;
   color: variables.$white-color;
-  padding: 8rem 3.5rem;
+  padding: 8rem 3.5rem 2rem;
 
   h2 {
     @include mixins.heading;
@@ -160,5 +161,94 @@ header {
   img {
     width: 100%;
     grid-area: img;
+  }
+}
+
+.store-info {
+
+  h2 {
+    @include mixins.heading;
+    padding: 5rem 0 2rem;
+  }
+
+  p {
+    @include mixins.paragraph;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+}
+
+.hours {
+  @include mixins.paragraph;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 2;
+  font-weight: 300;
+  margin: 3rem 0;
+
+  .days {
+    padding-left: 12rem;
+  }
+
+  .times {
+    padding-left: 1.75rem;
+  }
+}
+
+.coffees {
+  text-align: center;
+
+  h2 {
+    @include mixins.heading;
+    font-size: 2.25rem;
+    padding: 5rem 0 2rem;
+    color: variables.$dark-green-bg;
+  }
+
+  p.sub {
+    @include mixins.paragraph;
+    font-size: 1.5rem;
+    padding: 0 5rem 4.5rem;
+    color: variables.$dark-brown-text;
+    font-weight: 375;
+  }
+
+  h3 {
+    @include mixins.menu;
+    padding: .5rem 10.25rem .75rem 8rem;
+    font-size: 2rem;
+  }
+
+  p.desc {
+    padding: 0 10.25rem 2.5rem 8rem;
+    @include mixins.paragraph;
+    text-align: left;
+    font-size: 1.125rem;
+    font-weight: 350;
+  }
+}
+
+.teas {
+  @extend .coffees;
+
+  p.sub {
+    padding-bottom: 8rem;
+  }
+
+  p.desc {
+    padding-bottom: 4rem;
+  }
+}
+
+.pastries-snacks {
+  @extend .teas;
+
+  .desc-last {
+    @include mixins.paragraph;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 350;
+    padding: 0 1.25rem 9rem;
   }
 }

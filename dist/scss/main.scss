@@ -25,6 +25,11 @@
   overscroll-behavior: none;
 }
 
+.coffee-hero-transparent-bg-full,
+.tablet-add {
+  display: none;
+}
+
 #banner {
   color: variables.$hamburger-menu;
   position: fixed;
@@ -143,7 +148,6 @@ button.order-online {
 
   .contact {
     font-weight: 300;
-
 
     .address {
       @include mixins.paragraph;

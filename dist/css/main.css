@@ -54,6 +54,11 @@ textarea {
       overscroll-behavior: none;
 }
 
+.coffee-hero-transparent-bg-full,
+.tablet-add {
+  display: none;
+}
+
 #banner {
   color: #271911;
   position: fixed;
