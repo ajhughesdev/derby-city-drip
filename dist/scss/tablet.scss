@@ -34,11 +34,12 @@
 
 a:any-link {
   cursor: pointer;
-
-  & :hover {
-    text-decoration: underline;
-  }
 }
+
+a:hover {
+  text-decoration: underline;
+}
+
 
 header {
   #banner {
@@ -202,7 +203,7 @@ header {
   h2 {
     @include mixins.heading;
     font-size: 2.25rem;
-    padding: 5rem 0 2rem;
+    padding: 5rem 0 1rem;
     color: variables.$dark-green-bg;
   }
 
@@ -232,23 +233,150 @@ header {
 .teas {
   @extend .coffees;
 
+  h2 {
+    padding-top: 2.5rem;
+  }
+
   p.sub {
-    padding-bottom: 8rem;
+    padding-bottom: 4.5rem;
   }
 
   p.desc {
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
   }
 }
 
 .pastries-snacks {
   @extend .teas;
 
+  h2 {
+    padding-top: 7rem;
+  }
+
   .desc-last {
+    padding: 0 10.25rem 11rem 8rem;
     @include mixins.paragraph;
     text-align: left;
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-weight: 350;
-    padding: 0 1.25rem 9rem;
+  }
+}
+
+.cta {
+  background-color: variables.$green-bg;
+  color: variables.$white-color;
+  padding-top: 7rem;
+
+  h2 {
+    @include mixins.heading;
+    font-size: 2.55rem;
+    text-align: center;
+    padding-bottom: 2.5rem;
+  }
+
+  p {
+    @include mixins.paragraph;
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 0 6.5rem 4rem;
+    line-height: 2.5rem;
+    letter-spacing: .03rem;
+  }
+}
+
+.email-signup {
+  padding: 0 10rem 6rem;
+
+  .label {
+    font-family: "Quantico-Regular", monospace;
+    font-weight: 400;
+  }
+
+  .name-email {
+    width: 100%;
+    margin: .5rem 0 2.5rem;
+    padding: .5rem;
+    font-size: 1rem;
+    font-family: "Open Sans", "Open-Sans", sans-serif;
+    text-transform: uppercase;
+    background-color: variables.$white-color;
+    color: variables.$dark-brown-text;
+    border-radius: 6px;
+    border: 2.5px solid grey;
+  }
+
+  ::placeholder {
+    opacity: 1 !important;
+  }
+
+  .join-now {
+    @include mixins.button;
+    margin: 0 auto;
+    padding: 1rem 3.8rem;
+    background-color: variables.$light-brown-button;
+    border: unset;
+  }
+}
+
+footer {
+  color: variables.$white-color;
+  background-color: variables.$dark-green-bg;
+}
+
+h2 {
+  @include mixins.heading;
+  font-size: 2rem;
+  padding: 2.5rem 5rem 1.5rem;
+}
+
+.location {
+  padding-top: 10rem;
+}
+
+.address,
+.email-phone,
+.sitemap>ul,
+.socials>p {
+  padding: 0 20rem 1.5rem 5rem;
+  @include mixins.paragraph;
+  font-weight: 300;
+  font-size: 1.115rem;
+}
+
+.address,
+.sitemap>ul {
+  text-transform: uppercase;
+}
+
+ul>li:not(:last-child) {
+  padding-bottom: 1rem;
+}
+
+.socials-svg {
+  display: flex;
+  margin: 1rem 22rem 9rem 4rem;
+  justify-content: space-evenly;
+
+  img {
+    width: 3.5rem;
+  }
+}
+
+.sub-footer {
+  background-color: variables.$darkest-green-bg;
+  color: variables.$white-color;
+  font-family: "Open-Sans", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.15rem;
+  font-weight: 300;
+  padding: 2.5rem 0;
+
+  img {
+    width: .95rem;
+  }
+
+  p:last-child {
+    padding-top: 1rem;
   }
 }
