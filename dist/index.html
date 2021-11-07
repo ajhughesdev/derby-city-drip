@@ -16,7 +16,8 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Quantico:wght@400;700&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" media="screen and (min-width: 375px) and (max-width: 767px)" />
-    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 768px)" />
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 768px) and (max-width: 1439px)" />
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 1440px)" />
   </head>
 
   <body>
@@ -30,10 +31,10 @@
       </div>
       <nav>
         <div id="top-nav">
-          <a href="/dist/">home</a>
-          <a href="#location-link" onclick="closeNav()">location</a>
-          <a href="#menu-link" onclick="closeNav()">menu</a>
-          <a href="#contact-link" onclick="closeNav()">contact</a>
+          <a href="/dist/" class="top-a">home</a>
+          <a href="#location-link" class="top-b" onclick="closeNav()">location</a>
+          <a href="#menu-link" class="top-c" onclick="closeNav()">menu</a>
+          <a href="#contact-link" class="top-d" onclick="closeNav()">contact</a>
         </div>
       </nav>
     </header>
@@ -43,7 +44,7 @@
         <section class="hero">
           <div class="hero-1">
             <h1>experience the best cup in town</h1>
-            <p>Single origin mazagran, half and half robust pumpkin spice aged con panna. Sugar shop at a single shot
+            <p>Single origin mazagran, half and half robust pumpkin spice aged con panna. Sugar shop ut a single shot
               steamed half and half.</p>
             <a href="#" class="order-online"><button class="order-online" type="button" autofocus>order
                 online</button></a>
@@ -53,13 +54,14 @@
               <img src="img/backgrounds/coffee-hero-transparent-bg.png" alt="cup of coffee"
                 class="coffee-hero-transparent-bg" style="margin-bottom: -4px" />
               <img src="img/backgrounds/coffee-hero-transparent-bg-full.png" alt="cup of coffee"
-                class="coffee-hero-transparent-bg-full" /> </span>
+                class="coffee-hero-transparent-bg-full" />
+            </span>
           </div>
           <div class="hero-2">
             <h2>our finely roasted coffees</h2>
             <p id="location-link">Flavour sit brewed irish qui roast americano mocha single shot affogato. Aged, steamed
               roast white saucer aroma decaffeinated. Caramelization skinny brewed, foam extra eu latte cream grounds to
-              go.</p>
+              go. </p>
           </div>
         </section>
         <section class="location-hours">
@@ -76,6 +78,7 @@
           </div>
           <img src="https://via.placeholder.com/300.png" alt="map" class="googleMap" />
           <img src="https://via.placeholder.com/660x300.png" alt="map" class="googleMap-tab" />
+          <img src="https://via.placeholder.com/660x340.png" alt="map" class="googleMap-desk" />
           <!-- <img width=" 600" class="googleMap"
             src="https://maps.googleapis.com/maps/api/staticmap?scale=4&size=600x300&maptype=roadmap&key={API+key}&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:%7C1234+w+Main+Street,+Louisville,+KY+40213"
             alt="Google Map of 1234 W Main Street, Louisville, KY 40213" /> -->
@@ -162,7 +165,7 @@
             <h3><span class="left">scone</span><span class="right">2.99</span></h3>
             <p class="desc">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
             <h3><span class="left">brownie</span><span class="right">2.99</span></h3>
-            <p class="desc-last">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
+            <p class="desc-last">Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot. </p>
           </div>
         </section>
         <section class="cta">

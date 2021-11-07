@@ -1,0 +1,251 @@
+/*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+*:where(:not(iframe, canvas, img, svg, video, input):not(svg *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol,
+ul {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+@font-face {
+  font-family: "Open-Sans";
+  src: url("../fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.woff2") format("woff2-variations");
+  font-weight: 300 800;
+  font-stretch: 75% 100%;
+}
+@font-face {
+  font-family: "Quantico-Bold";
+  src: url("../fonts/Quantico/Quantico-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Quantico-Regular";
+  src: url("../fonts/Quantico/Quantico-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+:root {
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
+  background-color: #c8dad9;
+}
+
+.hamburger,
+.order-online,
+.coffee-hero-transparent-bg,
+.tablet-del,
+.googleMap,
+.googleMap-tab {
+  display: none;
+}
+
+a:-webkit-any-link {
+  cursor: pointer;
+}
+
+a:-moz-any-link {
+  cursor: pointer;
+}
+
+a:any-link {
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 49.65% 50.35%;
+}
+header #banner {
+  color: #271911;
+  display: flex;
+}
+header #banner .logo {
+  margin: 5rem 0 0 28.6rem;
+}
+header #top-nav {
+  font-family: "Quantico-Bold", monospace;
+  text-transform: uppercase;
+  display: flex;
+  font-size: 1.125rem;
+  margin: 6.25rem 30rem 0 0;
+  justify-content: space-between;
+}
+header .top-c {
+  padding-left: 0.35rem;
+}
+
+.hero .hero-1 {
+  margin: 4rem 0 0 31rem;
+  display: grid;
+  width: 900px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(21, 1.5625rem);
+  grid-column-gap: 20px;
+}
+.hero .hero-1 h1 {
+  font-family: "Quantico-Bold", monospace;
+  text-transform: uppercase;
+  font-size: 2.65rem;
+  color: #271911;
+  line-height: 1.2;
+  grid-area: 3/1/5/8;
+}
+.hero .hero-1 p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.35px;
+  font-weight: 375;
+  font-size: 1.125rem;
+  font-stretch: 100%;
+  line-height: 1.35;
+  grid-area: 8/1/11/7;
+}
+.hero .hero-1 a.view-menu {
+  grid-area: 13/1/14/4;
+  display: grid;
+  grid-template-columns: repeat(4, 3.75rem);
+  grid-template-rows: 4.0625rem;
+  margin-top: -1rem;
+}
+.hero .hero-1 a.view-menu button {
+  grid-area: 1/1/2/5;
+  padding: 0 10px;
+  padding: 1rem 2.15rem;
+  display: block;
+  border-radius: 10px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.45rem;
+  font-family: "Quantico-Regular";
+  text-transform: uppercase;
+  background-color: #3c1f11;
+}
+.hero .hero-1 .cup {
+  width: 333rem;
+  grid-area: 1/7/23/13;
+  transform: translate(5px, -15px);
+}
+.hero .hero-2 {
+  padding: 7rem 35rem 8rem;
+  background: #271911 url("../img/backgrounds/coffee-beans-bg.jpg") center/120rem no-repeat;
+  color: white;
+}
+.hero .hero-2 h2 {
+  font-family: "Quantico-Bold", monospace;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.65rem;
+}
+.hero .hero-2 p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.35px;
+  line-height: 1.5;
+  letter-spacing: 0.35px;
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding-top: 2.5rem;
+}
+
+.location-hours {
+  background-color: #212d31;
+  color: white;
+  padding: 7rem 28rem;
+  display: grid;
+  grid-template-columns: repeat(3, 20.625rem);
+  grid-template-rows: repeat(3, auto);
+}
+.location-hours h2 {
+  font-family: "Quantico-Bold", monospace;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.location-hours p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.35px;
+  font-weight: 375;
+  font-size: 1.1rem;
+}
+.location-hours .contact {
+  padding: 1.75rem 0 3.5rem;
+  grid-area: 2/1/3/3;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+.location-hours .contact .address {
+  text-transform: uppercase;
+  grid-area: 1/1/2/2;
+}
+.location-hours .contact .email-phone {
+  grid-area: 1/2/2/2;
+  justify-self: start;
+  align-items: center;
+  margin-left: 2rem;
+}
+.location-hours .googleMap-desk {
+  min-width: 660px;
+  grid-area: 3/1/4/3;
+}
+.location-hours .store-info {
+  grid-area: 1/3/4/4;
+  display: flex;
+  flex-direction: column;
+  padding-left: 3rem;
+}
+.location-hours .store-info h2 {
+  font-family: "Quantico-Bold", monospace;
+  text-transform: uppercase;
+  padding-bottom: 1.75rem;
+}
+.location-hours .store-info p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.35px;
+  font-size: 1.1rem;
+  font-weight: 300;
+  padding-bottom: 1.5rem;
+}
+.location-hours .store-info .hours {
+  border-collapse: separate;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.35px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 2;
+  font-weight: 300;
+}
+.location-hours .store-info .hours .times {
+  padding-left: 1.75rem;
+}/*# sourceMappingURL=desktop.css.map */
