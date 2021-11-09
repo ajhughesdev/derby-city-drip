@@ -57,8 +57,10 @@ textarea {
 .hamburger,
 .order-online,
 .coffee-hero-transparent-bg,
-.tablet-del,
-.googleMap {
+.mocha,
+.coffees-b,
+.googleMap,
+.googleMap-desk {
   display: none;
 }
 
@@ -230,17 +232,17 @@ header #top-nav {
   padding-left: 1.75rem;
 }
 
-.coffees, .teas, .pastries-snacks {
+.product-menu .coffees, .product-menu .pastries-snacks, .product-menu .teas {
   text-align: center;
 }
-.coffees h2, .teas h2, .pastries-snacks h2 {
+.product-menu .coffees h2, .product-menu .pastries-snacks h2, .product-menu .teas h2 {
   font-family: "Quantico-Bold", monospace;
   text-transform: uppercase;
   font-size: 2.25rem;
   padding: 5rem 0 1rem;
   color: #212d31;
 }
-.coffees p.sub, .teas p.sub, .pastries-snacks p.sub {
+.product-menu .coffees p.sub, .product-menu .pastries-snacks p.sub, .product-menu .teas p.sub {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
@@ -249,7 +251,9 @@ header #top-nav {
   color: #271911;
   font-weight: 375;
 }
-.coffees h3, .teas h3, .pastries-snacks h3 {
+.product-menu .coffees-a h3, .product-menu .teas-a h3, .product-menu .pastries-snacks-a h3,
+.product-menu .pastries-snacks-b h3,
+.product-menu .teas-b h3 {
   display: flex;
   font-family: "Quantico-Bold", monospace;
   font-size: 1.5rem;
@@ -259,7 +263,9 @@ header #top-nav {
   padding: 0.5rem 10.25rem 0.75rem 8rem;
   font-size: 2rem;
 }
-.coffees p.desc, .teas p.desc, .pastries-snacks p.desc {
+.product-menu .coffees-a p.desc, .product-menu .teas-a p.desc, .product-menu .pastries-snacks-a p.desc,
+.product-menu .pastries-snacks-b p.desc,
+.product-menu .teas-b p.desc {
   padding: 0 10.25rem 2.5rem 8rem;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
@@ -268,21 +274,19 @@ header #top-nav {
   font-size: 1.125rem;
   font-weight: 350;
 }
-
-.teas h2, .pastries-snacks h2 {
-  padding-top: 2.5rem;
+.product-menu .teas {
+  padding: 2.5rem 0 4.5rem;
 }
-.teas p.sub, .pastries-snacks p.sub {
-  padding-bottom: 4.5rem;
-}
-.teas p.desc, .pastries-snacks p.desc {
+.product-menu .teas-a p.desc, .product-menu .pastries-snacks-a p.desc,
+.product-menu .pastries-snacks-b p.desc,
+.product-menu .teas-b p.desc {
   padding-bottom: 3rem;
 }
-
-.pastries-snacks h2 {
+.product-menu .pastries-snacks h2 {
   padding-top: 7rem;
 }
-.pastries-snacks .desc-last {
+.product-menu .pastries-snacks-a .desc-last,
+.product-menu .pastries-snacks-b .desc-last {
   padding: 0 10.25rem 11rem 8rem;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;

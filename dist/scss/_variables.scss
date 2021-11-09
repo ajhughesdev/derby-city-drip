@@ -5,7 +5,7 @@ $darkest-green-bg: hsl(193, 46%, 8%); //  sub-footer background
 
 $light-brown-button: hsl(26, 52%, 40%); // cta button bg
 $dark-brown-button: hsl(20, 56%, 15%); // hero button bg
-$dark-brown-text: hsl(22, 39%, 11%); //  hero, also h3 & p product-menu text 
+$dark-brown-text: hsl(22, 39%, 11%); // hero, also h3 & p product-menu text 
 
 $white-color: hsl(0, 0%, 100%); // bean, location-hours, cta, footer, sub-footer & button text, 
 // also menu background *socials svg background before opacity filter*
@@ -13,3 +13,5 @@ $white-color: hsl(0, 0%, 100%); // bean, location-hours, cta, footer, sub-footer
 $menu-active-bg: hsl(28, 39%, 50%); // nav-menu *focus* background
 $hamburger-menu: hsl(21, 40%, 11%); //hamburger svg fill
 
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1920px;

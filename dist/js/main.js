@@ -10,3 +10,4 @@ if (viewportWidth <= 767) {
     document.getElementById("mobile-nav-push-down").style.paddingTop = "0";
   };
 };
+

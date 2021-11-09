@@ -55,8 +55,11 @@ textarea {
 }
 
 .coffee-hero-transparent-bg-full,
-.tablet-add,
 .googleMap-tab,
+.googleMap-desk,
+.plunger,
+.coffees-b,
+.hot-chocolate,
 .view-menu {
   display: none;
 }
@@ -247,7 +250,10 @@ button.order-online {
   color: #271911;
   font-weight: 350;
 }
-.coffees h3, .teas h3, .pastries-snacks h3 {
+
+.coffees-a h3, .teas-a h3, .pastries-snacks-a h3,
+.pastries-snacks-b h3,
+.teas-b h3 {
   display: flex;
   font-family: "Quantico-Bold", monospace;
   font-size: 1.5rem;
@@ -256,7 +262,9 @@ button.order-online {
   color: #271911;
   padding: 0.5rem 1.25rem 0.5rem;
 }
-.coffees p.desc, .teas p.desc, .pastries-snacks p.desc {
+.coffees-a p.desc, .teas-a p.desc, .pastries-snacks-a p.desc,
+.pastries-snacks-b p.desc,
+.teas-b p.desc {
   padding: 0 1.25rem 2.5rem;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
@@ -273,7 +281,8 @@ button.order-online {
   padding-bottom: 4rem;
 }
 
-.pastries-snacks .desc-last {
+.pastries-snacks-a .desc-last,
+.pastries-snacks-b .desc-last {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
@@ -317,7 +326,7 @@ button.order-online {
   margin: 0.5rem 0 2.5rem;
   padding: 0.5rem;
   font-size: 1rem;
-  font-family: "Open Sans", "Open-Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   background-color: white;
   color: #271911;
