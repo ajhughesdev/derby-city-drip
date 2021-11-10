@@ -11,3 +11,4 @@ if (viewportWidth <= 767) {
   };
 };
 
+document.querySelector('#copyright-year').innerText = new Date().getFullYear();
