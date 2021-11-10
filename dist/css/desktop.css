@@ -152,7 +152,7 @@ header .top-c {
   background-color: #3c1f11;
 }
 .hero .hero-1 .cup {
-  width: 333rem;
+  width: 33rem;
   grid-area: 1/7/23/13;
   transform: translate(5px, -15px);
 }
