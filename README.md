@@ -5,9 +5,29 @@ source code for Code Louisville's Front-end Web Development Sept. 2021 cohort fi
 
 ---
 
+## media queries
 
+i am fulfilling the media query requirement by serving three different stylesheets depending on device width. a width of 767px or less reveals my initial mobile-first design, while 768px - 1919px shifts the layout & styles the page for tablets. at 1920px & above, the layout shifts again to provide a new UI experience for wider monitors. the media attribute is used in the ```<link>``` tags in the head of the site to achieve these changes.
+
+## css feature 
+
+to satisfy the css requirements, i have written a responsive nav bar w/ a hamburger menu that appears on screens who's widths are 767px or less. it includes animation transitions to create a smooth drop-down menu & a background color change when hovering over w/ a mouse. it is also fixed to remain at the top of the page when a user scrolls down through the site's content.
+
+the "desktop" layout is achieved using css grid & sub-grid. the hero, location-hours, product-menu, & footer sections especially utilize the grid as there are significant layout shifts once a device's viewport is 1920px or wider.
+
+## javascript feature
+
+i am using a short script to keep the copyright year in the sub-footer up-to-date, while hardcoding the year in the html for users who may have javascript disabled. the script changes the inner text of the specific element & is included in the main js file for the site. initially, i used ```document.write(new Date().getFullYear());``` inline to achieve this but after reading about performance issues when dynamically injecting scripts i chose the current solution.
+
+## additional feature
+
+continuing w/ javascript, i query the current width of the device & if under 767px (aka the mobile view) clicking on the hamburger menu will push the remaining content down to reveal a menu w/ several options that link to different sections of the page. the menu will close when the user clicks or taps anything that is not the menu. i achieve this by changing styling properties of two elements as you can see from the two functions written to fire upon certain events. the script isn't affective when the device's width is 768px or more as the navigation menu disappears on tablet & desktop views, as described in the media query & css feature sections.
 
 ### etc.
+
+#### scss, postcss, node.js, parcel, etc...
+
+if you look through my commit history you may notice my experimentation in various preprocessors & developement environments. through the writing of this project, i tried to focus on scalability & a dev environment that could be easily understood & shared amongst a group of coworkers. i hope to continue to learn more about production including developing a personal component library as i think the industry is continuing to move to more stand-alone modular features that can be dropped into a project & easily styled within the constraints of a client's branding. experimenting with tailwindcss, bootstrap 5, BEM, etc has got me especially jazzed about writing my own utility classes in css as well.  
 
 #### fonts
 
