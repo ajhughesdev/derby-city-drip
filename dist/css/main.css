@@ -1,32 +1,38 @@
 /*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
 /* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
-*:where(:not(iframe):not(canvas):not(img):not(svg):not(video):not(input):not(svg *)) {
+*:where(:not(iframe, canvas, img, svg, video, input):not(svg *)) {
   all: unset;
   display: revert;
 }
+
 /* Preferred box-sizing value */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 /* Remove list styles (bullets/numbers) */
 ol,
 ul {
   list-style: none;
 }
+
 /* For images to not be able to exceed their container */
 img {
   max-width: 100%;
 }
+
 /* removes spacing between cells in tables */
 table {
   border-collapse: collapse;
 }
+
 /* revert the 'white-space' property for textarea elements on Safari */
 textarea {
   white-space: revert;
 }
+
 @font-face {
   font-family: "Open-Sans";
   src: url("../fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.woff2") format("woff2-variations");
@@ -47,6 +53,7 @@ textarea {
   -ms-scroll-chaining: none;
       overscroll-behavior: none;
 }
+
 .coffee-hero-transparent-bg-full,
 .googleMap-tab,
 .googleMap-desk,
@@ -56,6 +63,7 @@ textarea {
 .view-menu {
   display: none;
 }
+
 #banner {
   color: #271911;
   position: fixed;
@@ -73,6 +81,7 @@ textarea {
 #banner .hamburger {
   width: 2.75rem;
 }
+
 #top-nav {
   height: 0;
   width: 100%;
@@ -104,6 +113,7 @@ textarea {
   background-color: #b17c4e;
   transition: background-color 450ms;
 }
+
 .hero-1 {
   background-color: #c8dad9;
   padding: 8.75rem 1.25rem 0;
@@ -124,10 +134,17 @@ textarea {
   line-height: 1.35;
   font-weight: 300;
 }
+
 a:hover {
   cursor: pointer;
   text-decoration: underline;
 }
+
+button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 button.order-online {
   padding: 1rem 2.15rem;
   display: block;
@@ -140,6 +157,7 @@ button.order-online {
   margin: 0 auto 1.25rem;
   background-color: #3c1f11;
 }
+
 .hero-2 {
   background: #271911 url("../img/backgrounds/coffee-beans-bg.jpg") center/65rem no-repeat;
   color: white;
@@ -160,6 +178,7 @@ button.order-online {
   letter-spacing: 0.35px;
   font-weight: 300;
 }
+
 .location-hours {
   background-color: #212d31;
   color: white;
@@ -188,6 +207,7 @@ button.order-online {
   letter-spacing: 0.35px;
   padding: 1.5rem 0 3.5rem;
 }
+
 .store-info {
   background-color: #212d31;
   color: white;
@@ -216,6 +236,7 @@ button.order-online {
 .store-info .hours .times {
   padding-left: 3.5rem;
 }
+
 .coffees, .teas, .pastries-snacks {
   text-align: center;
 }
@@ -234,6 +255,7 @@ button.order-online {
   color: #271911;
   font-weight: 350;
 }
+
 .coffees-a h3, .teas-a h3, .pastries-snacks-a h3,
 .pastries-snacks-b h3,
 .teas-b h3 {
@@ -256,12 +278,14 @@ button.order-online {
   font-size: 1rem;
   font-weight: 350;
 }
+
 .teas p.sub, .pastries-snacks p.sub {
   padding-bottom: 8rem;
 }
 .teas p.desc, .pastries-snacks p.desc {
   padding-bottom: 4rem;
 }
+
 .pastries-snacks-a .desc-last,
 .pastries-snacks-b .desc-last {
   font-family: "Open Sans", sans-serif;
@@ -272,6 +296,7 @@ button.order-online {
   font-weight: 350;
   padding: 0 1.25rem 9rem;
 }
+
 .cta {
   background-color: #1d443f;
   color: white;
@@ -293,12 +318,14 @@ button.order-online {
   padding-bottom: 4.5rem;
   line-height: 1.5rem;
 }
+
 .email-signup {
   padding-bottom: 5rem;
 }
 .email-signup .label {
   font-family: "Quantico-Regular", monospace;
   font-weight: 400;
+  text-transform: uppercase;
 }
 .email-signup .name-email {
   width: 100%;
@@ -306,7 +333,6 @@ button.order-online {
   padding: 0.5rem;
   font-size: 1rem;
   font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
   background-color: white;
   color: #271911;
   border-radius: 6px;
@@ -334,7 +360,9 @@ button.order-online {
   padding: 1rem 3.8rem;
   background-color: #9b5f31;
   border: unset;
+  cursor: pointer;
 }
+
 footer {
   color: white;
   background-color: #212d31;
@@ -374,6 +402,7 @@ footer .socials-svg {
 footer .socials-svg img {
   width: 3.5rem;
 }
+
 .sub-footer {
   background-color: #0b1a1e;
   color: white;
@@ -389,5 +418,4 @@ footer .socials-svg img {
 }
 .sub-footer p:last-child {
   padding-top: 1rem;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

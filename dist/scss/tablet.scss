@@ -95,6 +95,16 @@ header {
     z-index: 2;
   }
 
+  a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
   .coffee-hero-transparent-bg-full {
     display: flex;
     margin: 0 auto -4rem;
@@ -306,11 +316,11 @@ header {
     padding: .5rem;
     font-size: 1rem;
     font-family: "Open Sans", "Open-Sans", sans-serif;
-    text-transform: uppercase;
     background-color: variables.$white-color;
     color: variables.$dark-brown-text;
     border-radius: 6px;
     border: 2.5px solid grey;
+    text-transform: uppercase;
   }
 
   ::placeholder {
@@ -323,6 +333,7 @@ header {
     padding: 1rem 3.8rem;
     background-color: variables.$light-brown-button;
     border: unset;
+    cursor: pointer;
   }
 }
 

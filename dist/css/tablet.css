@@ -1,32 +1,38 @@
 /*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
 /* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
-*:where(:not(iframe):not(canvas):not(img):not(svg):not(video):not(input):not(svg *)) {
+*:where(:not(iframe, canvas, img, svg, video, input):not(svg *)) {
   all: unset;
   display: revert;
 }
+
 /* Preferred box-sizing value */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 /* Remove list styles (bullets/numbers) */
 ol,
 ul {
   list-style: none;
 }
+
 /* For images to not be able to exceed their container */
 img {
   max-width: 100%;
 }
+
 /* removes spacing between cells in tables */
 table {
   border-collapse: collapse;
 }
+
 /* revert the 'white-space' property for textarea elements on Safari */
 textarea {
   white-space: revert;
 }
+
 @font-face {
   font-family: "Open-Sans";
   src: url("../fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.woff2") format("woff2-variations");
@@ -47,6 +53,7 @@ textarea {
   -ms-scroll-chaining: none;
       overscroll-behavior: none;
 }
+
 .hamburger,
 .order-online,
 .coffee-hero-transparent-bg,
@@ -56,27 +63,23 @@ textarea {
 .googleMap-desk {
   display: none;
 }
+
 a:-webkit-any-link {
   cursor: pointer;
 }
+
 a:-moz-any-link {
   cursor: pointer;
 }
-a:link,a:visited {
-  cursor: pointer;
-}
-a:-webkit-any-link {
-  cursor: pointer;
-}
-a:-moz-any-link {
-  cursor: pointer;
-}
+
 a:any-link {
   cursor: pointer;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 header #banner {
   color: #271911;
   display: flex;
@@ -98,6 +101,7 @@ header #top-nav {
   font-family: "Quantico-Bold";
   text-transform: uppercase;
 }
+
 .hero-1 {
   padding: 0 7rem;
 }
@@ -133,6 +137,14 @@ header #top-nav {
   background-color: #3c1f11;
   z-index: 2;
 }
+.hero-1 a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.hero-1 button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
 .hero-1 .coffee-hero-transparent-bg-full {
   display: flex;
   margin: 0 auto -4rem;
@@ -140,6 +152,7 @@ header #top-nav {
   width: 85%;
   transform: translateY(-3.5rem);
 }
+
 .hero-2 {
   padding: 12rem 7rem 8rem;
   background: #271911 url("../img/backgrounds/coffee-beans-bg.jpg") center/120rem no-repeat;
@@ -161,6 +174,7 @@ header #top-nav {
   font-size: 1.5rem;
   padding-top: 2.5rem;
 }
+
 .location-hours {
   background-color: #212d31;
   color: white;
@@ -194,6 +208,7 @@ header #top-nav {
   display: flex;
   width: 100%;
 }
+
 .store-info h2 {
   font-family: "Quantico-Bold", monospace;
   text-transform: uppercase;
@@ -206,6 +221,7 @@ header #top-nav {
   font-size: 1.5rem;
   font-weight: 300;
 }
+
 .hours {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
@@ -223,6 +239,7 @@ header #top-nav {
 .hours .times {
   padding-left: 1.75rem;
 }
+
 .product-menu .coffees, .product-menu .pastries-snacks, .product-menu .teas {
   text-align: center;
 }
@@ -286,6 +303,7 @@ header #top-nav {
   font-size: 1.125rem;
   font-weight: 350;
 }
+
 .cta {
   background-color: #1d443f;
   color: white;
@@ -308,6 +326,7 @@ header #top-nav {
   line-height: 2.5rem;
   letter-spacing: 0.03rem;
 }
+
 .email-signup {
   padding: 0 10rem 6rem;
 }
@@ -321,11 +340,11 @@ header #top-nav {
   padding: 0.5rem;
   font-size: 1rem;
   font-family: "Open Sans", "Open-Sans", sans-serif;
-  text-transform: uppercase;
   background-color: white;
   color: #271911;
   border-radius: 6px;
   border: 2.5px solid grey;
+  text-transform: uppercase;
 }
 .email-signup ::-moz-placeholder {
   opacity: 1 !important;
@@ -349,7 +368,9 @@ header #top-nav {
   padding: 1rem 3.8rem;
   background-color: #9b5f31;
   border: unset;
+  cursor: pointer;
 }
+
 footer {
   color: white;
   background-color: #212d31;
@@ -389,6 +410,7 @@ footer .socials-svg {
 footer .socials-svg img {
   width: 3.5rem;
 }
+
 .sub-footer {
   background-color: #0b1a1e;
   color: white;
@@ -404,5 +426,4 @@ footer .socials-svg img {
 }
 .sub-footer p:last-child {
   padding-top: 1rem;
-}
-/*# sourceMappingURL=tablet.css.map */
+}/*# sourceMappingURL=tablet.css.map */

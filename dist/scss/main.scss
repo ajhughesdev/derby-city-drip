@@ -114,6 +114,11 @@ a:hover {
   text-decoration: underline;
 }
 
+button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 button.order-online {
   @include mixins.button;
   margin: 0 auto 1.25rem;
@@ -291,6 +296,7 @@ button.order-online {
   .label {
     font-family: "Quantico-Regular", monospace;
     font-weight: 400;
+    text-transform: uppercase;
   }
 
   .name-email {
@@ -299,7 +305,6 @@ button.order-online {
     padding: .5rem;
     font-size: 1rem;
     font-family: "Open Sans", sans-serif;
-    text-transform: uppercase;
     background-color: variables.$white-color;
     color: variables.$dark-brown-text;
     border-radius: 6px;
@@ -316,6 +321,7 @@ button.order-online {
     padding: 1rem 3.8rem;
     background-color: variables.$light-brown-button;
     border: unset;
+    cursor: pointer;
   }
 }
 

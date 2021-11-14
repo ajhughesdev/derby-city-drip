@@ -32,7 +32,7 @@
 .googleMap,
 .googleMap-tab,
 .hot-chocolate {
-  display: none;
+  display: none !important;
 }
 
 a:any-link {
@@ -96,14 +96,15 @@ header {
       grid-area: 8 / 1 / 11 / 7;
     }
 
-    a.view-menu {
+    button.view-menu {
       grid-area: 13 / 1 / 14 / 4;
       display: grid;
       grid-template-columns: repeat(4, 3.75rem);
       grid-template-rows: 4.0625rem;
       margin-top: -1rem;
+      cursor: pointer;
 
-      button {
+      .button {
         grid-area: 1 / 1 / 2 / 5;
         padding: 0 10px;
         @include mixins.button;
@@ -449,19 +450,18 @@ header {
   ::placeholder {
     opacity: 1 !important;
   }
-
-  a {
-    grid-area: 2 / 1 / 3 / 3;
-
-    .join-now {
-      @include mixins.button;
-      margin: 0 auto;
-      padding: 1rem 3.8rem;
-      background-color: variables.$light-brown-button;
-      border: unset;
-    }
-  }
 }
+
+button.join-now {
+  grid-area: 2 / 1 / 3 / 3;
+  @include mixins.button;
+  margin: 0 auto;
+  padding: 1rem 3.8rem;
+  background-color: variables.$light-brown-button;
+  border: unset;
+  cursor: pointer;
+}
+
 
 footer {
   color: variables.$white-color;
