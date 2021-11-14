@@ -98,7 +98,7 @@ header #top-nav {
   text-align: center;
   justify-content: space-between;
   padding: 2rem 6.5rem 0;
-  font-family: "Quantico-Bold";
+  font-family: "Quantico-Bold", "Quantico", monospace;
   text-transform: uppercase;
 }
 
@@ -106,14 +106,14 @@ header #top-nav {
   padding: 0 7rem;
 }
 .hero-1 h1 {
-  font-family: "Quantico-Bold", monospace;
+  font-family: "Quantico-Bold", "Quantico", monospace;
   text-transform: uppercase;
   font-size: 2.65rem;
   padding-top: 4rem;
   color: #271911;
 }
 .hero-1 p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open-Sans", "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   font-weight: 375;
@@ -130,7 +130,7 @@ header #top-nav {
   color: #ffffff;
   text-align: center;
   font-size: 1.45rem;
-  font-family: "Quantico-Regular";
+  font-family: "Quantico-Regular" "Quantico", monospace;
   text-transform: uppercase;
   margin: 2rem 0 0;
   padding: 1rem 3.5rem;
@@ -159,13 +159,13 @@ header #top-nav {
   color: white;
 }
 .hero-2 h2 {
-  font-family: "Quantico-Bold", monospace;
+  font-family: "Quantico-Bold", "Quantico", monospace;
   text-transform: uppercase;
   text-align: center;
   font-size: 2.65rem;
 }
 .hero-2 p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open-Sans", "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   line-height: 1.5;
@@ -181,12 +181,12 @@ header #top-nav {
   padding: 7rem 3.5rem 2rem;
 }
 .location-hours h2 {
-  font-family: "Quantico-Bold", monospace;
+  font-family: "Quantico-Bold", "Quantico", monospace;
   text-transform: uppercase;
   font-size: 2rem;
 }
 .location-hours p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open-Sans", "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   font-weight: 4000;
@@ -210,12 +210,12 @@ header #top-nav {
 }
 
 .store-info h2 {
-  font-family: "Quantico-Bold", monospace;
+  font-family: "Quantico-Bold", "Quantico", monospace;
   text-transform: uppercase;
   padding: 5rem 0 2rem;
 }
 .store-info p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open-Sans", "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   font-size: 1.5rem;
@@ -223,7 +223,7 @@ header #top-nav {
 }
 
 .hours {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open-Sans", "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   font-size: 1.5rem;
@@ -244,14 +244,14 @@ header #top-nav {
   text-align: center;
 }
 .product-menu .coffees h2, .product-menu .pastries-snacks h2, .product-menu .teas h2 {
-  font-family: "Quantico-Bold", monospace;
+  font-family: "Quantico-Bold", "Quantico", monospace;
   text-transform: uppercase;
   font-size: 2.25rem;
   padding: 5rem 0 1rem;
   color: #212d31;
 }
 .product-menu .coffees p.sub, .product-menu .pastries-snacks p.sub, .product-menu .teas p.sub {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open-Sans", "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   font-size: 1.5rem;
@@ -263,7 +263,7 @@ header #top-nav {
 .product-menu .pastries-snacks-b h3,
 .product-menu .teas-b h3 {
   display: flex;
-  font-family: "Quantico-Bold", monospace;
+  font-family: "Quantico-Bold", "Quantico", monospace;
   font-size: 1.5rem;
   justify-content: space-between;
   text-transform: uppercase;
@@ -275,7 +275,7 @@ header #top-nav {
 .product-menu .pastries-snacks-b p.desc,
 .product-menu .teas-b p.desc {
   padding: 0 10.25rem 2.5rem 8rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open-Sans", "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   text-align: left;
@@ -296,7 +296,7 @@ header #top-nav {
 .product-menu .pastries-snacks-a .desc-last,
 .product-menu .pastries-snacks-b .desc-last {
   padding: 0 10.25rem 11rem 8rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open-Sans", "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   text-align: left;
@@ -310,14 +310,14 @@ header #top-nav {
   padding-top: 7rem;
 }
 .cta h2 {
-  font-family: "Quantico-Bold", monospace;
+  font-family: "Quantico-Bold", "Quantico", monospace;
   text-transform: uppercase;
   font-size: 2.55rem;
   text-align: center;
   padding-bottom: 2.5rem;
 }
 .cta p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open-Sans", "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   font-weight: 300;
@@ -331,7 +331,7 @@ header #top-nav {
   padding: 0 10rem 6rem;
 }
 .email-signup .label {
-  font-family: "Quantico-Regular", monospace;
+  font-family: "Quantico-Regular", "Quantico", monospace;
   font-weight: 400;
 }
 .email-signup .name-email {
@@ -339,7 +339,7 @@ header #top-nav {
   margin: 0.5rem 0 2.5rem;
   padding: 0.5rem;
   font-size: 1rem;
-  font-family: "Open Sans", "Open-Sans", sans-serif;
+  font-family: "Open-Sans", "Open Sans", sans-serif;
   background-color: white;
   color: #271911;
   border-radius: 6px;
@@ -362,7 +362,7 @@ header #top-nav {
   color: #ffffff;
   text-align: center;
   font-size: 1.45rem;
-  font-family: "Quantico-Regular";
+  font-family: "Quantico-Regular" "Quantico", monospace;
   text-transform: uppercase;
   margin: 0 auto;
   padding: 1rem 3.8rem;
@@ -376,7 +376,7 @@ footer {
   background-color: #212d31;
 }
 footer h2 {
-  font-family: "Quantico-Bold", monospace;
+  font-family: "Quantico-Bold", "Quantico", monospace;
   text-transform: uppercase;
   font-size: 2rem;
   padding: 2.5rem 5rem 1.5rem;
@@ -389,7 +389,7 @@ footer .email-phone,
 footer .sitemap > ul,
 footer .socials > p {
   padding: 0 20rem 1.5rem 5rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open-Sans", "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   font-weight: 300;
@@ -414,7 +414,7 @@ footer .socials-svg img {
 .sub-footer {
   background-color: #0b1a1e;
   color: white;
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Open-Sans", "Open Sans", sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-size: 1.15rem;

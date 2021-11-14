@@ -69,7 +69,7 @@
   grid-template-rows: repeat(4, 1fr);
   color: variables.$white-color;
   font-size: 1.5rem;
-  font-family: "Quantico-Regular";
+  font-family: "Quantico-Regular", "Quantico", monospace;
   text-transform: uppercase;
   transition: height ease-in 450ms;
 
@@ -294,7 +294,7 @@ button.order-online {
   padding-bottom: 5rem;
 
   .label {
-    font-family: "Quantico-Regular", monospace;
+    font-family: "Quantico-Regular", "Quantico", monospace;
     font-weight: 400;
   }
 
@@ -304,7 +304,7 @@ button.order-online {
     margin: .5rem 0 2.5rem;
     padding: .5rem;
     font-size: 1rem;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open-Sans", "Open Sans,"sans-serif;
     background-color: variables.$white-color;
     color: variables.$dark-brown-text;
     border-radius: 6px;
@@ -373,7 +373,7 @@ footer {
 .sub-footer {
   background-color: variables.$darkest-green-bg;
   color: variables.$white-color;
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Open-Sans", "Open Sans,"sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;

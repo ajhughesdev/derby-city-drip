@@ -430,7 +430,7 @@ header {
   justify-content: center;
 
   .label {
-    font-family: "Quantico-Regular", monospace;
+    font-family: "Quantico-Regular", "Quantico", monospace;
     font-weight: 400;
   }
 
@@ -439,7 +439,7 @@ header {
     margin: .5rem 0 2.5rem;
     padding: .5rem;
     font-size: 1rem;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open-Sans", "Open Sans,"sans-serif;
     text-transform: uppercase;
     background-color: variables.$white-color;
     color: variables.$dark-brown-text;
@@ -497,7 +497,7 @@ footer {
     }
 
     h2 {
-      font-family: "Quantico-Regular", monospace;
+      font-family: "Quantico-Regular", "Quantico", monospace;
       text-transform: uppercase;
       font-size: 2rem;
       padding: 2.5rem 5rem 1.5rem;
@@ -537,7 +537,7 @@ footer {
   justify-content: space-between;
   background-color: variables.$darkest-green-bg;
   color: variables.$white-color;
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Open-Sans", "Open Sans", sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-size: 1rem;

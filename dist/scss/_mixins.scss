@@ -1,13 +1,13 @@
 @use "variables";
 
 @mixin heading {
-  font-family: "Quantico-Bold", monospace;
+  font-family: "Quantico-Bold", "Quantico", monospace;
   text-transform: uppercase;
 }
 
 @mixin menu {
   display: flex;
-  font-family: "Quantico-Bold", monospace;
+  font-family: "Quantico-Bold", "Quantico", monospace;
   font-size: 1.5rem;
   justify-content: space-between;
   text-transform: uppercase;
@@ -15,7 +15,7 @@
 }
 
 @mixin paragraph {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open-Sans", "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: .35px;
 }
@@ -27,6 +27,6 @@
   color: #ffffff;
   text-align: center;
   font-size: 1.45rem;
-  font-family: "Quantico-Regular";
+  font-family: "Quantico-Regular""Quantico", monospace;
   text-transform: uppercase;
 }

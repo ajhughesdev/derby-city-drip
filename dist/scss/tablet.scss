@@ -62,7 +62,7 @@ header {
     text-align: center;
     justify-content: space-between;
     padding: 2rem 6.5rem 0;
-    font-family: "Quantico-Bold";
+    font-family: "Quantico-Bold", "Quantico", monospace;
     text-transform: uppercase;
   }
 }
@@ -306,7 +306,7 @@ header {
   padding: 0 10rem 6rem;
 
   .label {
-    font-family: "Quantico-Regular", monospace;
+    font-family: "Quantico-Regular", "Quantico", monospace;
     font-weight: 400;
   }
 
@@ -315,7 +315,7 @@ header {
     margin: .5rem 0 2.5rem;
     padding: .5rem;
     font-size: 1rem;
-    font-family: "Open Sans", "Open-Sans", sans-serif;
+    font-family: "Open-Sans", "Open Sans", sans-serif;
     background-color: variables.$white-color;
     color: variables.$dark-brown-text;
     border-radius: 6px;
@@ -384,7 +384,7 @@ footer {
 .sub-footer {
   background-color: variables.$darkest-green-bg;
   color: variables.$white-color;
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Open-Sans", "Open Sans", sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-size: 1.15rem;

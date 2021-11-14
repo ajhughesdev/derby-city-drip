@@ -96,7 +96,7 @@ textarea {
   grid-template-rows: repeat(4, 1fr);
   color: white;
   font-size: 1.5rem;
-  font-family: "Quantico-Regular";
+  font-family: "Quantico-Regular", "Quantico", monospace;
   text-transform: uppercase;
   transition: height ease-in 450ms;
 }
@@ -119,14 +119,14 @@ textarea {
   padding: 8.75rem 1.25rem 0;
 }
 .hero-1 h1 {
-  font-family: "Quantico-Bold", monospace;
+  font-family: "Quantico-Bold", "Quantico", monospace;
   text-transform: uppercase;
   font-size: 2.25rem;
   line-height: 1;
   color: #271911;
 }
 .hero-1 p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open-Sans", "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   margin: 2rem 1rem 3.5rem;
@@ -152,7 +152,7 @@ button.order-online {
   color: #ffffff;
   text-align: center;
   font-size: 1.45rem;
-  font-family: "Quantico-Regular";
+  font-family: "Quantico-Regular" "Quantico", monospace;
   text-transform: uppercase;
   margin: 0 auto 1.25rem;
   background-color: #3c1f11;
@@ -163,14 +163,14 @@ button.order-online {
   color: white;
 }
 .hero-2 h2 {
-  font-family: "Quantico-Bold", monospace;
+  font-family: "Quantico-Bold", "Quantico", monospace;
   text-transform: uppercase;
   text-align: center;
   font-size: 2rem;
   padding: 4.5rem 3rem 3rem;
 }
 .hero-2 p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open-Sans", "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   padding: 0 3.25rem 7rem;
@@ -186,7 +186,7 @@ button.order-online {
   padding: 6rem 0 7.5rem;
 }
 .location-hours h2 {
-  font-family: "Quantico-Bold", monospace;
+  font-family: "Quantico-Bold", "Quantico", monospace;
   text-transform: uppercase;
   font-size: 2rem;
 }
@@ -195,14 +195,14 @@ button.order-online {
   padding-bottom: 3.5rem;
 }
 .location-hours .contact .address {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open-Sans", "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   text-transform: uppercase;
   padding: 2rem;
 }
 .location-hours .contact .email-phone {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open-Sans", "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   padding: 1.5rem 0 3.5rem;
@@ -215,14 +215,14 @@ button.order-online {
   padding-top: 4.5rem;
 }
 .store-info p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open-Sans", "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   padding: 1.5rem 2.5rem 4rem;
   font-weight: 300;
 }
 .store-info .hours {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open-Sans", "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   text-transform: uppercase;
@@ -241,14 +241,14 @@ button.order-online {
   text-align: center;
 }
 .coffees h2, .teas h2, .pastries-snacks h2 {
-  font-family: "Quantico-Bold", monospace;
+  font-family: "Quantico-Bold", "Quantico", monospace;
   text-transform: uppercase;
   font-size: 2rem;
   padding: 5rem 1.25rem 1.25rem;
   color: #212d31;
 }
 .coffees p.sub, .teas p.sub, .pastries-snacks p.sub {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open-Sans", "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   padding: 0 1.75rem 4.5rem;
@@ -260,7 +260,7 @@ button.order-online {
 .pastries-snacks-b h3,
 .teas-b h3 {
   display: flex;
-  font-family: "Quantico-Bold", monospace;
+  font-family: "Quantico-Bold", "Quantico", monospace;
   font-size: 1.5rem;
   justify-content: space-between;
   text-transform: uppercase;
@@ -271,7 +271,7 @@ button.order-online {
 .pastries-snacks-b p.desc,
 .teas-b p.desc {
   padding: 0 1.25rem 2.5rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open-Sans", "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   text-align: left;
@@ -288,7 +288,7 @@ button.order-online {
 
 .pastries-snacks-a .desc-last,
 .pastries-snacks-b .desc-last {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open-Sans", "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   text-align: left;
@@ -303,14 +303,14 @@ button.order-online {
   padding: 0 2rem;
 }
 .cta h2 {
-  font-family: "Quantico-Bold", monospace;
+  font-family: "Quantico-Bold", "Quantico", monospace;
   text-transform: uppercase;
   font-size: 2.5rem;
   text-align: center;
   padding: 4rem 0 3rem;
 }
 .cta p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open-Sans", "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   font-weight: 300;
@@ -323,7 +323,7 @@ button.order-online {
   padding-bottom: 5rem;
 }
 .email-signup .label {
-  font-family: "Quantico-Regular", monospace;
+  font-family: "Quantico-Regular", "Quantico", monospace;
   font-weight: 400;
 }
 .email-signup .name-email {
@@ -332,7 +332,7 @@ button.order-online {
   margin: 0.5rem 0 2.5rem;
   padding: 0.5rem;
   font-size: 1rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open-Sans", "Open Sans," sans-serif;
   background-color: white;
   color: #271911;
   border-radius: 6px;
@@ -354,7 +354,7 @@ button.order-online {
   color: #ffffff;
   text-align: center;
   font-size: 1.45rem;
-  font-family: "Quantico-Regular";
+  font-family: "Quantico-Regular" "Quantico", monospace;
   text-transform: uppercase;
   margin: 0 auto;
   padding: 1rem 3.8rem;
@@ -368,7 +368,7 @@ footer {
   background-color: #212d31;
 }
 footer h2 {
-  font-family: "Quantico-Bold", monospace;
+  font-family: "Quantico-Bold", "Quantico", monospace;
   text-transform: uppercase;
   font-size: 2rem;
   padding: 2rem 3.5rem 1rem;
@@ -381,7 +381,7 @@ footer .email-phone,
 footer .sitemap > ul,
 footer .socials > p {
   padding: 0 3.5rem 1.5rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open-Sans", "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   font-weight: 300;
@@ -406,7 +406,7 @@ footer .socials-svg img {
 .sub-footer {
   background-color: #0b1a1e;
   color: white;
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Open-Sans", "Open Sans," sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
