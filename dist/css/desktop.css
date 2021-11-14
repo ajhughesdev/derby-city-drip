@@ -52,9 +52,7 @@ textarea {
 :root {
   -ms-scroll-chaining: none;
       overscroll-behavior: none;
-  overflow-x: hidden;
   background-color: #c8dad9;
-  max-width: 1920px;
 }
 
 .hamburger,

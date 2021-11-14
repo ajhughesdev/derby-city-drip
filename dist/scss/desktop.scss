@@ -23,9 +23,8 @@
 
 :root {
   overscroll-behavior: none;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   background-color: variables.$light-green-bg;
-  max-width: 1920px;
 }
 
 .hamburger,
