@@ -146,7 +146,7 @@ header .top-c {
   color: #ffffff;
   text-align: center;
   font-size: 1.45rem;
-  font-family: "Quantico-Regular" "Quantico", monospace;
+  font-family: "Quantico-Regular", "Quantico", monospace;
   text-transform: uppercase;
   background-color: #3c1f11;
 }
@@ -513,7 +513,7 @@ button.join-now {
   color: #ffffff;
   text-align: center;
   font-size: 1.45rem;
-  font-family: "Quantico-Regular" "Quantico", monospace;
+  font-family: "Quantico-Regular", "Quantico", monospace;
   text-transform: uppercase;
   margin: 0 auto;
   padding: 1rem 3.8rem;

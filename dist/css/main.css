@@ -52,6 +52,7 @@ textarea {
 :root {
   -ms-scroll-chaining: none;
       overscroll-behavior: none;
+  scroll-behavior: smooth;
 }
 
 .coffee-hero-transparent-bg-full,
@@ -152,7 +153,7 @@ button.order-online {
   color: #ffffff;
   text-align: center;
   font-size: 1.45rem;
-  font-family: "Quantico-Regular" "Quantico", monospace;
+  font-family: "Quantico-Regular", "Quantico", monospace;
   text-transform: uppercase;
   margin: 0 auto 1.25rem;
   background-color: #3c1f11;
@@ -354,7 +355,7 @@ button.order-online {
   color: #ffffff;
   text-align: center;
   font-size: 1.45rem;
-  font-family: "Quantico-Regular" "Quantico", monospace;
+  font-family: "Quantico-Regular", "Quantico", monospace;
   text-transform: uppercase;
   margin: 0 auto;
   padding: 1rem 3.8rem;
