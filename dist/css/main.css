@@ -325,9 +325,9 @@ button.order-online {
 .email-signup .label {
   font-family: "Quantico-Regular", monospace;
   font-weight: 400;
-  text-transform: uppercase;
 }
 .email-signup .name-email {
+  text-transform: uppercase;
   width: 100%;
   margin: 0.5rem 0 2.5rem;
   padding: 0.5rem;
