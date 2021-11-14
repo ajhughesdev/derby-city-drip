@@ -23,7 +23,6 @@
 
 :root {
   overscroll-behavior: none;
-  // overflow-x: hidden;
   background-color: variables.$light-green-bg;
 }
 
@@ -125,7 +124,7 @@ header {
 
   .hero-2 {
     padding: 7rem 34rem 8rem;
-    background: variables.$dark-brown-text url('../img/backgrounds/coffee-beans-bg.jpg') center / 120rem no-repeat;
+    background: variables.$dark-brown-text url('../img/backgrounds/coffee-beans-bg.jpg') center / 120rem repeat;
     color: variables.$white-color;
 
     h2 {

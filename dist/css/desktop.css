@@ -1,38 +1,32 @@
 /*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
 /* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
-*:where(:not(iframe, canvas, img, svg, video, input):not(svg *)) {
+*:where(:not(iframe):not(canvas):not(img):not(svg):not(video):not(input):not(svg *)) {
   all: unset;
   display: revert;
 }
-
 /* Preferred box-sizing value */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
 /* Remove list styles (bullets/numbers) */
 ol,
 ul {
   list-style: none;
 }
-
 /* For images to not be able to exceed their container */
 img {
   max-width: 100%;
 }
-
 /* removes spacing between cells in tables */
 table {
   border-collapse: collapse;
 }
-
 /* revert the 'white-space' property for textarea elements on Safari */
 textarea {
   white-space: revert;
 }
-
 @font-face {
   font-family: "Open-Sans";
   src: url("../fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.woff2") format("woff2-variations");
@@ -54,7 +48,6 @@ textarea {
       overscroll-behavior: none;
   background-color: #c8dad9;
 }
-
 .hamburger,
 .order-online,
 .coffee-hero-transparent-bg,
@@ -63,23 +56,21 @@ textarea {
 .hot-chocolate {
   display: none;
 }
-
+a:link,a:visited {
+  cursor: pointer;
+}
 a:-webkit-any-link {
   cursor: pointer;
 }
-
 a:-moz-any-link {
   cursor: pointer;
 }
-
 a:any-link {
   cursor: pointer;
 }
-
 a:hover {
   text-decoration: underline;
 }
-
 header {
   display: grid;
   grid-template-columns: 49.65% 50.35%;
@@ -102,7 +93,6 @@ header #top-nav {
 header .top-c {
   padding-left: 0.35rem;
 }
-
 .hero .hero-1 {
   margin: 4rem 0 0 31rem;
   display: grid;
@@ -156,7 +146,7 @@ header .top-c {
 }
 .hero .hero-2 {
   padding: 7rem 34rem 8rem;
-  background: #271911 url("../img/backgrounds/coffee-beans-bg.jpg") center/120rem no-repeat;
+  background: #271911 url("../img/backgrounds/coffee-beans-bg.jpg") center/120rem repeat;
   color: white;
 }
 .hero .hero-2 h2 {
@@ -175,7 +165,6 @@ header .top-c {
   font-size: 1.5rem;
   padding-top: 2.5rem;
 }
-
 .location-hours {
   background-color: #212d31;
   color: white;
@@ -249,7 +238,6 @@ header .top-c {
 .location-hours .store-info .hours .times {
   padding-left: 1.75rem;
 }
-
 .product-menu {
   padding: 6rem 28rem 0;
   display: grid;
@@ -447,7 +435,6 @@ header .top-c {
   font-size: 1.125rem;
   font-weight: 350;
 }
-
 .cta {
   background-color: #1d443f;
   color: white;
@@ -470,7 +457,6 @@ header .top-c {
   line-height: 2.5rem;
   letter-spacing: 0.03rem;
 }
-
 .email-signup {
   padding: 0 10rem 8rem;
   display: grid;
@@ -520,7 +506,6 @@ header .top-c {
   background-color: #9b5f31;
   border: unset;
 }
-
 footer {
   color: white;
   background-color: #212d31;
@@ -578,7 +563,6 @@ footer .footer-desktop .socials > p {
 footer .footer-desktop ul > li:not(:last-child) {
   padding-bottom: 0.5rem;
 }
-
 .sub-footer {
   display: flex;
   padding: 2.5rem 29rem;
@@ -593,4 +577,5 @@ footer .footer-desktop ul > li:not(:last-child) {
 }
 .sub-footer img {
   width: 0.95rem;
-}/*# sourceMappingURL=desktop.css.map */
+}
+/*# sourceMappingURL=desktop.css.map */
