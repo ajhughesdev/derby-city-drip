@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
+  font-size: 10px;
+
+  --hamburger-menu: hsl(21, 40%, 11%);
+}
+
+.h-85 {
+  height: 8.5rem;
+}
+
+.top-85 {
+  top: 8.5rem; 
+}
+
+.top-425 {
+  top: 4.25rem
+}
+
+.w-45 {
+  width: 4.4rem;
+}
+
+.py-25 {
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+}
+
+.text-25 {
+  font-size: 2.4rem;
+}
