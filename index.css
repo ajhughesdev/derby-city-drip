@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
+  font-size: 16px;
+
+  --hamburger-menu: hsl(21, 40%, 11%);
+}
+
+.max-w-hamburger {
+  max-width: 2.75rem;
+}
