@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'coffee-beans': url('/dist/img/backgrounds/coffee-beans-bg.jpg')
+        'coffee-beans': "url('/dist/img/backgrounds/coffee-beans-bg.jpg')"
+      },
+      backgroundSize: {
+        'hero-b': '65rem'
       },
       colors: {
         'light-green-bg': 'hsl(184, 20%, 85%)', // hero background
@@ -23,7 +26,11 @@ module.exports = {
         'open-sans': ['Open Sans', 'sans-serif']
       },
       fontSize: {
-        'button-view-menu': '1.45rem'
+        'button-view-menu': '1.45rem',
+        'hero-b-h2': '2rem'
+      },
+      letterSpacing: {
+        'paragraph': '0.35px'
       },
       lineHeight: {
         '2.5': '2.5'
@@ -31,10 +38,14 @@ module.exports = {
       maxWidth: {
         '1/4': '25%',
         '1/2': '50%',
-        '3/4': '75%'
+        '3/4': '75%',
+        'hamburger-menu': '2.75rem'
       },
-      padding: {
-        'button-px': '2.15rem'
+      spacing: {
+        'button-px': '2.15rem',
+        'days': '4.25rem',
+        '18': '4.5rem',
+        'location-h2': '7.5rem'
       },
       transitionProperty: {
         'background-color': 'background-color',
