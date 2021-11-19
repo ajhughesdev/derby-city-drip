@@ -23,7 +23,9 @@ when a user submit's their name & email address in the form at the bottom of the
 
 ## additional features
 
-continuing w/ javascript, i query the current width of the device & if under 767px (aka the mobile view) clicking on the hamburger menu will push the remaining content down to reveal a menu w/ several options that link to different sections of the page. the menu will close when the user clicks or taps anything that is not the menu. i achieve this by changing styling properties of two elements as you can see from the two functions written to fire upon certain events. the script isn't affective when the device's width is 768px or more as the navigation menu disappears on tablet & desktop views, as described in the media query & css feature sections.
+continuing w/ javascript, i query the current width of the device & if under 767px (aka the mobile view) clicking on the hamburger menu will push the remaining content down to reveal a menu w/ several options that link to different sections of the page. the menu will close when the user clicks or taps anything that is not the menu. i achieve this by changing styling properties of two elements as you can see from the two functions written to fire upon certain events. the script isn't effective when the device's width is 768px or more as the navigation menu disappears on tablet & desktop views, as described in the media query & css feature sections.
+
+when the viewport width is targeting mobile devices, the button in the hero section states "order online" but once the user's device is 768px or wider, the text dynamically changes to "view menu" and the margin & padding adjust to a larger styling. 
 
 i am using a short script to keep the copyright year in the sub-footer up-to-date, while hardcoding the year in the html for users who may have javascript disabled. the script changes the inner text of the specific element & is included in the main js file for the site. initially, i used ```document.write(new Date().getFullYear());``` inline to achieve this but after reading about performance issues when dynamically injecting scripts i chose the current solution.
 
