@@ -13,17 +13,19 @@ i am fulfilling the media query requirement by serving three different styleshee
 
 ## css feature 
 
-to satisfy the css requirements, i have written a responsive nav bar w/ a hamburger menu that appears on screens who's widths are 767px or less. it includes animation transitions to create a smooth drop-down menu & a background color change when hovering over w/ a mouse. it is also fixed to remain at the top of the page when a user scrolls down through the site's content.
+to satisfy the css requirements, i have written a responsive nav bar w/ a hamburger menu that appears on screens which widths are 767px or less. it includes animation transitions to create a smooth drop-down menu & a background color change when hovering over w/ a mouse. it is also fixed to remain at the top of the page when a user scrolls down through the site's content.
 
 the "desktop" layout is achieved using css grid & sub-grid. the hero, location-hours, product-menu, & footer sections especially utilize the grid as there are significant layout shifts once a device's viewport is 1920px or wider.
 
 ## javascript feature
 
-i am using a short script to keep the copyright year in the sub-footer up-to-date, while hardcoding the year in the html for users who may have javascript disabled. the script changes the inner text of the specific element & is included in the main js file for the site. initially, i used ```document.write(new Date().getFullYear());``` inline to achieve this but after reading about performance issues when dynamically injecting scripts i chose the current solution.
+when a user submit's their name & email address in the form at the bottom of the page, a message appears above the form welcoming them by name. if either the name field or email field is left empty, a pop-up alert reminds the user that both fields are required before submitting. this is accomplished by a function that fires onclick that checks the validity & if a value is missing changes the innerText of a div that is empty when first loading the page.
 
-## additional feature
+## additional features
 
 continuing w/ javascript, i query the current width of the device & if under 767px (aka the mobile view) clicking on the hamburger menu will push the remaining content down to reveal a menu w/ several options that link to different sections of the page. the menu will close when the user clicks or taps anything that is not the menu. i achieve this by changing styling properties of two elements as you can see from the two functions written to fire upon certain events. the script isn't affective when the device's width is 768px or more as the navigation menu disappears on tablet & desktop views, as described in the media query & css feature sections.
+
+i am using a short script to keep the copyright year in the sub-footer up-to-date, while hardcoding the year in the html for users who may have javascript disabled. the script changes the inner text of the specific element & is included in the main js file for the site. initially, i used ```document.write(new Date().getFullYear());``` inline to achieve this but after reading about performance issues when dynamically injecting scripts i chose the current solution.
 
 ### etc.
 
