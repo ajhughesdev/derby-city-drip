@@ -86,11 +86,13 @@ header {
     padding: .5rem 6rem 0 0;
   }
 
-  button#hero-btn {
+  button.view-menu {
     position: relative;
     @include mixins.button;
     background-color: variables.$dark-brown-button;
     z-index: 2;
+    margin: 2rem 0 0;
+    padding: 1rem 3.5rem;
   }
 
   a:hover {

@@ -15,18 +15,6 @@ if (viewportWidth <= 767) {
 };
 
 
-var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-if (viewportWidth >= 767) {
-  var z = document.getElementById("hero-btn");
-  z.innerText = "view menu";
-  z.style.marginTop = "2rem";
-  z.style.paddingTop = "1rem";
-  z.style.paddingBottom = "1rem";
-  z.style.paddingLeft = "3.5rem";
-  z.style.paddingRight = "3.5rem";
-}
-
-
 function emailSignup() {
   if (document.getElementById("name").validity.valueMissing || document.getElementById("email").validity.valueMissing) {
     alert("Name & valid email address are required!");
