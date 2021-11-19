@@ -11,4 +11,14 @@ if (viewportWidth <= 767) {
   };
 };
 
+function emailSignup() {
+  if (document.getElementById("name").validity.valueMissing || document.getElementById("email").validity.valueMissing) {
+    alert("Name & valid email address are required!");
+  } else {
+    var nameInput = document.getElementById("name").value;
+    var result = "Welcome to the DCD Coffee Club," + ' ' + nameInput + '!';
+    document.getElementById("divResult").innerText = result;
+  }
+}
+
 document.querySelector('#copyright-year').innerText = new Date().getFullYear();

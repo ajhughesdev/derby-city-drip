@@ -471,6 +471,17 @@ header .top-c {
   line-height: 2.5rem;
   letter-spacing: 0.03rem;
 }
+.cta div#divResult {
+  font-family: "Open-Sans", "Open Sans", sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  display: flex;
+  margin-top: -20px;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+  padding: 0 1rem;
+}
 
 .email-signup {
   padding: 0 10rem 8rem;

@@ -185,16 +185,17 @@
         <section class="cta">
           <h2>join the dcd coffee club!</h2>
           <p> Steamed roast white saucer aroma decaffeinated. Caramelization skinny brewed, foam extra eu latte cream grounds to go plunger pot.</p>
-          <form id="email-signup-form" action="#" target="email-welcome" method="post" class="email-signup">
+          <div id="divResult"></div>
+          <form id="email-signup-form" class="email-signup">
             <span class="signup-name">
-              <label for="name" class="label">NAME:</label><br>
+              <label for="name" class="label" value=" ">NAME:</label><br>
               <input class="name-email" type="text" id="name" name="name" placeholder="john doe" required /><br>
             </span>
             <span class="signup-email">
-              <label id="contact-link" for="email" class="label">EMAIL:</label><br>
+              <label id="contact-link" for="email" class="label" value=" ">EMAIL:</label><br>
               <input class="name-email" type="email" id="email" name="email" placeholder="johndoe@gmail.com" required /><br>
             </span>
-            <button type="submit" class="join-now">join now</button>
+            <button onclick="emailSignup()" type="button" class="join-now">join now</button>
           </form>
         </section>
       </main>
