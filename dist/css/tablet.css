@@ -122,7 +122,7 @@ header #top-nav {
   line-height: 1.35;
   padding: 0.5rem 6rem 0 0;
 }
-.hero-1 button.view-menu {
+.hero-1 button#hero-btn {
   position: relative;
   padding: 1rem 2.15rem;
   display: block;
@@ -132,8 +132,6 @@ header #top-nav {
   font-size: 1.45rem;
   font-family: "Quantico-Regular", "Quantico", monospace;
   text-transform: uppercase;
-  margin: 2rem 0 0;
-  padding: 1rem 3.5rem;
   background-color: #3c1f11;
   z-index: 2;
 }
