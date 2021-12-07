@@ -1,12 +1,12 @@
 module.exports = {
   plugins: [
-    require('postcss-import'),
-    require('postcss-preset-env')({
-      stage: 0
-    }),
-    require('autoprefixer')({
-      grid: true
-    }),
+    require('postcss-sort-media-queries')({
+      // sort: 'mobile-first' default value
+      sort: function (a, b) {
+        // custom sorting function
 
+      }
+    }),
+    require('autoprefixer')
   ]
 }

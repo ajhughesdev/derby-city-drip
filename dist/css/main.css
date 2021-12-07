@@ -1,57 +1,49 @@
-/*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
-/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
 *:where(:not(iframe, canvas, img, svg, video, input):not(svg *)) {
   all: unset;
   display: revert;
 }
 
-/* Preferred box-sizing value */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Remove list styles (bullets/numbers) */
 ol,
 ul {
   list-style: none;
 }
 
-/* For images to not be able to exceed their container */
 img {
   max-width: 100%;
 }
 
-/* removes spacing between cells in tables */
 table {
   border-collapse: collapse;
 }
 
-/* revert the 'white-space' property for textarea elements on Safari */
 textarea {
   white-space: revert;
 }
 
 @font-face {
-  font-family: "Open-Sans";
-  src: url("../fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.woff2") format("woff2-variations");
-  font-weight: 300 800;
-  font-stretch: 75% 100%;
+  font-family: quanticobold;
+  src: url(../fonts/quanticobold/Quantico-Bold-webfont.woff2) format("woff2"), url(../fonts/quanticobold/Quantico-Bold-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Quantico-Bold";
-  src: url("../fonts/Quantico/Quantico-Bold.woff2") format("woff2");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Quantico-Regular";
-  src: url("../fonts/Quantico/Quantico-Regular.woff2") format("woff2");
-  font-weight: 400;
+  font-family: opensanslight;
+  src: url(../fonts/opensanslight/OpenSans-Light-webfont.woff2) format("woff2"), url(../fonts/opensanslight/OpenSans-Light-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 :root {
-  -ms-scroll-chaining: none;
-      overscroll-behavior: none;
+  font-size: 16px;
+}
+
+:root {
+  overscroll-behavior: none;
   scroll-behavior: smooth;
 }
 
@@ -69,6 +61,7 @@ textarea {
   color: #271911;
   position: fixed;
   top: 0;
+  height: 0;
   width: 100%;
   background-color: white;
   display: flex;
@@ -84,22 +77,20 @@ textarea {
 }
 
 #top-nav {
-  height: 0;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
   top: 85px;
+  display: grid;
+  position: relative;
+  height: 250px;
   left: 0;
   right: 0;
   background-color: #212d31;
   overflow-y: hidden;
-  display: grid;
   grid-template-rows: repeat(4, 1fr);
   color: white;
   font-size: 1.5rem;
-  font-family: "Quantico-Regular", "Quantico", monospace;
+  font-family: quanticobold, monospace;
   text-transform: uppercase;
-  transition: height ease-in 450ms;
+  transition: display ease-in 450ms;
 }
 #top-nav a {
   justify-content: center;
@@ -115,25 +106,37 @@ textarea {
   transition: background-color 450ms;
 }
 
+body.header-not-at-top #top-nav {
+  position: fixed;
+  display: grid;
+}
+
+#top-of-site-pixel-anchor {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: 185px;
+  left: 0;
+}
+
 .hero-1 {
   background-color: #c8dad9;
   padding: 8.75rem 1.25rem 0;
 }
 .hero-1 h1 {
-  font-family: "Quantico-Bold", "Quantico", monospace;
+  font-family: quanticobold, monospace;
   text-transform: uppercase;
   font-size: 2.25rem;
   line-height: 1;
   color: #271911;
 }
 .hero-1 p {
-  font-family: "Open-Sans", "Open Sans", sans-serif;
+  font-family: opensanslight, sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   margin: 2rem 1rem 3.5rem;
   color: #271911;
   line-height: 1.35;
-  font-weight: 300;
 }
 
 a:hover {
@@ -153,7 +156,7 @@ button.order-online {
   color: #ffffff;
   text-align: center;
   font-size: 1.45rem;
-  font-family: "Quantico-Regular", "Quantico", monospace;
+  font-family: quanticobold, monospace;
   text-transform: uppercase;
   margin: 0 auto 1.25rem;
   background-color: #3c1f11;
@@ -164,20 +167,19 @@ button.order-online {
   color: white;
 }
 .hero-2 h2 {
-  font-family: "Quantico-Bold", "Quantico", monospace;
+  font-family: quanticobold, monospace;
   text-transform: uppercase;
   text-align: center;
   font-size: 2rem;
   padding: 4.5rem 3rem 3rem;
 }
 .hero-2 p {
-  font-family: "Open-Sans", "Open Sans", sans-serif;
+  font-family: opensanslight, sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   padding: 0 3.25rem 7rem;
   line-height: 1.5;
   letter-spacing: 0.35px;
-  font-weight: 300;
 }
 
 .location-hours {
@@ -187,23 +189,22 @@ button.order-online {
   padding: 6rem 0 7.5rem;
 }
 .location-hours h2 {
-  font-family: "Quantico-Bold", "Quantico", monospace;
+  font-family: quanticobold, monospace;
   text-transform: uppercase;
   font-size: 2rem;
 }
 .location-hours .contact {
-  font-weight: 300;
   padding-bottom: 3.5rem;
 }
 .location-hours .contact .address {
-  font-family: "Open-Sans", "Open Sans", sans-serif;
+  font-family: opensanslight, sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   text-transform: uppercase;
   padding: 2rem;
 }
 .location-hours .contact .email-phone {
-  font-family: "Open-Sans", "Open Sans", sans-serif;
+  font-family: opensanslight, sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   padding: 1.5rem 0 3.5rem;
@@ -216,20 +217,18 @@ button.order-online {
   padding-top: 4.5rem;
 }
 .store-info p {
-  font-family: "Open-Sans", "Open Sans", sans-serif;
+  font-family: opensanslight, sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   padding: 1.5rem 2.5rem 4rem;
-  font-weight: 300;
 }
 .store-info .hours {
-  font-family: "Open-Sans", "Open Sans", sans-serif;
+  font-family: opensanslight, sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   text-transform: uppercase;
   text-align: left;
   line-height: 2;
-  font-weight: 300;
 }
 .store-info .hours .days {
   padding-left: 4.25rem;
@@ -242,14 +241,14 @@ button.order-online {
   text-align: center;
 }
 .coffees h2, .teas h2, .pastries-snacks h2 {
-  font-family: "Quantico-Bold", "Quantico", monospace;
+  font-family: quanticobold, monospace;
   text-transform: uppercase;
   font-size: 2rem;
   padding: 5rem 1.25rem 1.25rem;
   color: #212d31;
 }
 .coffees p.sub, .teas p.sub, .pastries-snacks p.sub {
-  font-family: "Open-Sans", "Open Sans", sans-serif;
+  font-family: opensanslight, sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   padding: 0 1.75rem 4.5rem;
@@ -261,7 +260,7 @@ button.order-online {
 .pastries-snacks-b h3,
 .teas-b h3 {
   display: flex;
-  font-family: "Quantico-Bold", "Quantico", monospace;
+  font-family: quanticobold, monospace;
   font-size: 1.5rem;
   justify-content: space-between;
   text-transform: uppercase;
@@ -272,7 +271,7 @@ button.order-online {
 .pastries-snacks-b p.desc,
 .teas-b p.desc {
   padding: 0 1.25rem 2.5rem;
-  font-family: "Open-Sans", "Open Sans", sans-serif;
+  font-family: opensanslight, sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   text-align: left;
@@ -289,7 +288,7 @@ button.order-online {
 
 .pastries-snacks-a .desc-last,
 .pastries-snacks-b .desc-last {
-  font-family: "Open-Sans", "Open Sans", sans-serif;
+  font-family: opensanslight, sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
   text-align: left;
@@ -304,17 +303,16 @@ button.order-online {
   padding: 0 2rem;
 }
 .cta h2 {
-  font-family: "Quantico-Bold", "Quantico", monospace;
+  font-family: quanticobold, monospace;
   text-transform: uppercase;
   font-size: 2.5rem;
   text-align: center;
   padding: 4rem 0 3rem;
 }
 .cta p {
-  font-family: "Open-Sans", "Open Sans", sans-serif;
+  font-family: opensanslight, sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
-  font-weight: 300;
   font-size: 1.125rem;
   padding-bottom: 4.5rem;
   line-height: 1.5rem;
@@ -350,12 +348,6 @@ button.order-online {
   border-radius: 6px;
   border: 2.5px solid grey;
 }
-.email-signup ::-moz-placeholder {
-  opacity: 1 !important;
-}
-.email-signup :-ms-input-placeholder {
-  opacity: 1 !important;
-}
 .email-signup ::placeholder {
   opacity: 1 !important;
 }
@@ -366,7 +358,7 @@ button.order-online {
   color: #ffffff;
   text-align: center;
   font-size: 1.45rem;
-  font-family: "Quantico-Regular", "Quantico", monospace;
+  font-family: quanticobold, monospace;
   text-transform: uppercase;
   margin: 0 auto;
   padding: 1rem 3.8rem;
@@ -380,7 +372,7 @@ footer {
   background-color: #212d31;
 }
 footer h2 {
-  font-family: "Quantico-Bold", "Quantico", monospace;
+  font-family: quanticobold, monospace;
   text-transform: uppercase;
   font-size: 2rem;
   padding: 2rem 3.5rem 1rem;
@@ -393,10 +385,9 @@ footer .email-phone,
 footer .sitemap > ul,
 footer .socials > p {
   padding: 0 3.5rem 1.5rem;
-  font-family: "Open-Sans", "Open Sans", sans-serif;
+  font-family: opensanslight, sans-serif;
   font-size: 1rem;
   letter-spacing: 0.35px;
-  font-weight: 300;
   font-size: 1rem;
 }
 footer .address,
@@ -422,7 +413,6 @@ footer .socials-svg img {
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 300;
   padding: 2.25rem 0;
 }
 .sub-footer img {
@@ -431,3 +421,5 @@ footer .socials-svg img {
 .sub-footer p:last-child {
   padding-top: 1rem;
 }
+
+/*# sourceMappingURL=main.css.map */

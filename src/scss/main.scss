@@ -1,25 +1,9 @@
 @use 'reset';
 @use 'variables';
+@use 'layout';
 @use 'mixins';
-
-@font-face {
-  font-family: "Open-Sans";
-  src: url("../fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.woff2") format("woff2-variations");
-  font-weight: 300 800;
-  font-stretch: 75% 100%;
-}
-
-@font-face {
-  font-family: "Quantico-Bold";
-  src: url("../fonts/Quantico/Quantico-Bold.woff2") format("woff2");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Quantico-Regular";
-  src: url("../fonts/Quantico/Quantico-Regular.woff2") format("woff2");
-  font-weight: 400;
-}
+@use 'typography';
+// @use 'sass:map';
 
 :root {
   overscroll-behavior: none;
@@ -33,19 +17,21 @@
 .coffees-b,
 .hot-chocolate,
 .view-menu {
-  display: none;
+  @include mixins.hidden;
 }
 
 #banner {
   color: variables.$hamburger-menu;
   position: fixed;
   top: 0;
+  height: 0;
   width: 100%;
   background-color: variables.$white-color;
   display: flex;
   height: 85px;
   padding: 1.5rem 1.25rem;
   justify-content: space-between;
+
 
   .logo {
     width: 75%;
@@ -57,22 +43,20 @@
 }
 
 #top-nav {
-  height: 0;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
   top: 85px;
+  display: grid;
+  position: relative;
+  height: 250px;
   left: 0;
   right: 0;
   background-color: variables.$dark-green-bg;
   overflow-y: hidden;
-  display: grid;
   grid-template-rows: repeat(4, 1fr);
   color: variables.$white-color;
   font-size: 1.5rem;
-  font-family: "Quantico-Regular", "Quantico", monospace;
+  font-family: quanticobold, monospace;
   text-transform: uppercase;
-  transition: height ease-in 450ms;
+  transition: display ease-in 450ms;
 
   a {
     justify-content: center;
@@ -88,6 +72,19 @@
     background-color: variables.$menu-active-bg;
     transition: background-color 450ms;
   }
+}
+
+body.header-not-at-top #top-nav {
+  position: fixed;
+  display: grid;
+}
+
+#top-of-site-pixel-anchor {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: 185px;
+  left: 0;
 }
 
 .hero-1 {
@@ -106,7 +103,7 @@
     margin: 2rem 1rem 3.5rem;
     color: variables.$dark-brown-text;
     line-height: 1.35;
-    font-weight: 300;
+
   }
 }
 
@@ -142,7 +139,7 @@ button.order-online {
     padding: 0 3.25rem 7rem;
     line-height: 1.5;
     letter-spacing: .35px;
-    font-weight: 300;
+
   }
 }
 
@@ -158,7 +155,6 @@ button.order-online {
   }
 
   .contact {
-    font-weight: 300;
     padding-bottom: 3.5rem;
 
     .address {
@@ -183,7 +179,7 @@ button.order-online {
   p {
     @include mixins.paragraph;
     padding: 1.5rem 2.5rem 4rem;
-    font-weight: 300;
+
   }
 
   .hours {
@@ -191,7 +187,7 @@ button.order-online {
     text-transform: uppercase;
     text-align: left;
     line-height: 2;
-    font-weight: 300;
+
 
     .days {
       padding-left: 4.25rem;
@@ -284,7 +280,7 @@ button.order-online {
 
   p {
     @include mixins.paragraph;
-    font-weight: 300;
+
     font-size: 1.125rem;
     padding-bottom: 4.5rem;
     line-height: 1.5rem;
@@ -360,7 +356,7 @@ footer {
   .socials>p {
     padding: 0 3.5rem 1.5rem;
     @include mixins.paragraph;
-    font-weight: 300;
+
     font-size: 1rem;
   }
 
@@ -391,7 +387,7 @@ footer {
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 300;
+
   padding: 2.25rem 0;
 
   img {

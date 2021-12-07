@@ -3,27 +3,27 @@
 @use 'mixins';
 
 @font-face {
-  font-family: "Open-Sans";
+  font-family: opensanslight;
   src: url("../fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.woff2") format("woff2-variations");
   font-weight: 300 800;
   font-stretch: 75% 100%;
 }
 
 @font-face {
-  font-family: "Quantico-Bold";
+  font-family: quanticobold;
   src: url("../fonts/Quantico/Quantico-Bold.woff2") format("woff2");
   font-weight: 700;
 }
 
 @font-face {
-  font-family: "Quantico-Regular";
+  font-family: quanticobold;
   src: url("../fonts/Quantico/Quantico-Regular.woff2") format("woff2");
   font-weight: 400;
 }
 
 :root {
   overscroll-behavior: none;
-  background-color: variables.$light-green-bg;
+  background-color: $light-green-bg;
 }
 
 .hamburger,
@@ -82,7 +82,7 @@ header {
     h1 {
       @include mixins.heading;
       font-size: 2.65rem;
-      color: variables.$dark-brown-text;
+      color: $dark-brown-text;
       line-height: 1.2;
       grid-area: 3 / 1 / 5 / 8;
     }
@@ -108,7 +108,7 @@ header {
         grid-area: 1 / 1 / 2 / 5;
         padding: 0 10px;
         @include mixins.button;
-        background-color: variables.$dark-brown-button;
+        background-color: $dark-brown-button;
       }
     }
 
@@ -125,8 +125,8 @@ header {
 
   .hero-2 {
     padding: 7rem 34rem 8rem;
-    background: variables.$dark-brown-text url('../img/backgrounds/coffee-beans-bg.jpg') center / 120rem repeat;
-    color: variables.$white-color;
+    background: $dark-brown-text url('../img/backgrounds/coffee-beans-bg.jpg') center / 120rem repeat;
+    color: $white-color;
 
     h2 {
       @include mixins.heading;
@@ -146,8 +146,8 @@ header {
 }
 
 .location-hours {
-  background-color: variables.$dark-green-bg;
-  color: variables.$white-color;
+  background-color: $dark-green-bg;
+  color: $white-color;
   padding: 7rem 28rem;
   display: grid;
   grid-template-columns: repeat(3, 20.625rem);
@@ -237,14 +237,14 @@ header {
       @include mixins.heading;
       font-size: 2.25rem;
       padding-top: 5rem;
-      color: variables.$dark-green-bg;
+      color: $dark-green-bg;
     }
 
     p.sub {
       @include mixins.paragraph;
       font-size: 1.5rem;
       padding: 2.5rem 5rem 0;
-      color: variables.$dark-brown-text;
+      color: $dark-brown-text;
       font-weight: 375;
     }
   }
@@ -293,14 +293,14 @@ header {
       @include mixins.heading;
       font-size: 2.25rem;
       padding-top: 5rem;
-      color: variables.$dark-green-bg;
+      color: $dark-green-bg;
     }
 
     p.sub {
       @include mixins.paragraph;
       font-size: 1.5rem;
       padding: 2.5rem 4rem 0;
-      color: variables.$dark-brown-text;
+      color: $dark-brown-text;
       font-weight: 375;
     }
   }
@@ -350,14 +350,14 @@ header {
       @include mixins.heading;
       font-size: 2.25rem;
       padding-top: 7rem;
-      color: variables.$dark-green-bg;
+      color: $dark-green-bg;
     }
 
     p.sub {
       @include mixins.paragraph;
       font-size: 1.5rem;
       padding: 1rem 0 0;
-      color: variables.$dark-brown-text;
+      color: $dark-brown-text;
       font-weight: 375;
     }
   }
@@ -401,8 +401,8 @@ header {
 }
 
 .cta {
-  background-color: variables.$green-bg;
-  color: variables.$white-color;
+  background-color: $green-bg;
+  color: $white-color;
   padding: 5rem 28rem 0;
 
   h2 {
@@ -442,7 +442,7 @@ header {
   justify-content: center;
 
   .label {
-    font-family: "Quantico-Regular", "Quantico", monospace;
+    font-family: quanticobold, "Quantico", monospace;
     font-weight: 400;
   }
 
@@ -451,10 +451,11 @@ header {
     margin: .5rem 0 2.5rem;
     padding: .5rem;
     font-size: 1rem;
-    font-family: "Open-Sans", "Open Sans", sans-serif;
+    font-family: opensanslight
+, "Open Sans", sans-serif;
     text-transform: uppercase;
-    background-color: variables.$white-color;
-    color: variables.$dark-brown-text;
+    background-color: $white-color;
+    color: $dark-brown-text;
     border-radius: 6px;
     border: 2.5px solid grey;
   }
@@ -469,15 +470,15 @@ button.join-now {
   @include mixins.button;
   margin: 0 auto;
   padding: 1rem 3.8rem;
-  background-color: variables.$light-brown-button;
+  background-color: $light-brown-button;
   border: unset;
   cursor: pointer;
 }
 
 
 footer {
-  color: variables.$white-color;
-  background-color: variables.$dark-green-bg;
+  color: $white-color;
+  background-color: $dark-green-bg;
 
   .footer-desktop {
     padding: 4rem 25rem 5rem 24rem;
@@ -509,7 +510,7 @@ footer {
     }
 
     h2 {
-      font-family: "Quantico-Regular", "Quantico", monospace;
+      font-family: quanticobold, "Quantico", monospace;
       text-transform: uppercase;
       font-size: 2rem;
       padding: 2.5rem 5rem 1.5rem;
@@ -547,9 +548,9 @@ footer {
   display: flex;
   padding: 2.5rem 29rem;
   justify-content: space-between;
-  background-color: variables.$darkest-green-bg;
-  color: variables.$white-color;
-  font-family: "Open-Sans", "Open Sans", sans-serif;
+  background-color: $darkest-green-bg;
+  color: $white-color;
+  font-family: opensanslight, "Open Sans", sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-size: 1rem;

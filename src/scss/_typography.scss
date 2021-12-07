@@ -1,0 +1,21 @@
+@use 'variables';
+
+@font-face {
+  font-family: quanticobold;
+  src: url(#{variables.$quanticobold-path}/Quantico-Bold-webfont.woff2) format("woff2"),
+       url(#{variables.$quanticobold-path}/Quantico-Bold-webfont.woff)  format("woff");
+  font-weight: normal;
+  font-style:  normal;
+}
+
+@font-face {
+  font-family: opensanslight;
+  src: url(#{variables.$opensanslight-path}/OpenSans-Light-webfont.woff2) format('woff2'),
+       url(#{variables.$opensanslight-path}/OpenSans-Light-webfont.woff)  format('woff');
+  font-weight: normal;
+  font-style:  normal;
+}
+
+:root {
+  font-size: 16px;
+}
