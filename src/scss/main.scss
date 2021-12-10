@@ -2,35 +2,20 @@
 @use 'variables';
 @use 'layout';
 @use 'mixins';
-@use 'typography';
-// @use 'sass:map';
+@use 'globals';
 
-:root {
-  overscroll-behavior: none;
-  scroll-behavior: smooth;
-}
-
-.coffee-hero-transparent-bg-full,
-.googleMap-tab,
-.googleMap-desk,
-.plunger,
-.coffees-b,
-.hot-chocolate,
-.view-menu {
-  @include mixins.hidden;
-}
 
 #banner {
   color: variables.$hamburger-menu;
-  position: fixed;
   top: 0;
-  height: 0;
+  position: sticky;
+  height: 5.3125rem;
   width: 100%;
   background-color: variables.$white-color;
   display: flex;
-  height: 85px;
   padding: 1.5rem 1.25rem;
   justify-content: space-between;
+  z-index: 1;
 
 
   .logo {
@@ -43,9 +28,8 @@
 }
 
 #top-nav {
-  top: 85px;
-  display: grid;
-  position: relative;
+  top: 5.3125rem;
+  display: none;
   height: 250px;
   left: 0;
   right: 0;
@@ -74,22 +58,10 @@
   }
 }
 
-body.header-not-at-top #top-nav {
-  position: fixed;
-  display: grid;
-}
-
-#top-of-site-pixel-anchor {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  top: 185px;
-  left: 0;
-}
 
 .hero-1 {
   background-color: variables.$light-green-bg;
-  padding: 8.75rem 1.25rem 0;
+  padding: 3.4375rem 1.25rem 0;
 
   h1 {
     @include mixins.heading;
@@ -107,25 +79,22 @@ body.header-not-at-top #top-nav {
   }
 }
 
-a:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
 button:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 
-button.order-online {
+button.hero-button {
   @include mixins.button;
   margin: 0 auto 1.25rem;
   background-color: variables.$dark-brown-button;
+  content: " ";
 }
 
 .hero-2 {
-  background: variables.$dark-brown-text url('../img/backgrounds/coffee-beans-bg.jpg') center / 65rem no-repeat;
+  background: variables.$dark-brown-text url(#{variables.$bgimage-path}/coffee-beans-bg.jpg) center / 65rem repeat;
   color: variables.$white-color;
+  margin-top: -4px;
 
   h2 {
     @include mixins.heading;
@@ -142,6 +111,7 @@ button.order-online {
 
   }
 }
+
 
 .location-hours {
   background-color: variables.$dark-green-bg;
@@ -197,6 +167,10 @@ button.order-online {
       padding-left: 3.5rem;
     }
   }
+}
+
+.product-menu {
+  background-color: variables.$white-color;
 }
 
 .coffees {
@@ -304,7 +278,7 @@ button.order-online {
   padding-bottom: 5rem;
 
   .label {
-    font-family: "Quantico-Regular", "Quantico", monospace;
+    font-family: quanticobold, monospace;
     font-weight: 400;
   }
 
@@ -314,7 +288,7 @@ button.order-online {
     margin: .5rem 0 2.5rem;
     padding: .5rem;
     font-size: 1rem;
-    font-family: "Open-Sans", "Open Sans", sans-serif;
+    font-family: opensanslight, sans-serif;
     background-color: variables.$white-color;
     color: variables.$dark-brown-text;
     border-radius: 6px;
@@ -397,4 +371,44 @@ footer {
   p:last-child {
     padding-top: 1rem;
   }
+}
+
+#scrollToTopBtn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: variables.$menu-active-bg;
+  position: fixed;
+  bottom: 3-.25rem;
+  right: 0;
+  color: variables.$white-color;
+  font-family: quanticobold, 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+  transform: translateY(100px);
+  z-index: 100;
+  opacity: 0;
+  transition: all 450ms ease;
+  margin-right: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.showBtn {
+    opacity: .75;
+    margin-right: 1.25rem;
+    transform: translateY(0);
+    transition: all 150ms ease;
+    fill: variables.$white-color;
+  }
+}
+
+#scrollToTopBtn:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+
+
+@container (max-width: 300px) {
+  
 }

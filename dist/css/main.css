@@ -39,35 +39,30 @@ textarea {
   font-style: normal;
 }
 :root {
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
   font-size: 16px;
 }
 
-:root {
-  overscroll-behavior: none;
-  scroll-behavior: smooth;
+a:any-link {
+  cursor: pointer;
 }
 
-.coffee-hero-transparent-bg-full,
-.googleMap-tab,
-.googleMap-desk,
-.plunger,
-.coffees-b,
-.hot-chocolate,
-.view-menu {
+.hidden {
   display: none;
 }
 
 #banner {
   color: #271911;
-  position: fixed;
   top: 0;
-  height: 0;
+  position: sticky;
+  height: 5.3125rem;
   width: 100%;
   background-color: white;
   display: flex;
-  height: 85px;
   padding: 1.5rem 1.25rem;
   justify-content: space-between;
+  z-index: 1;
 }
 #banner .logo {
   width: 75%;
@@ -77,9 +72,8 @@ textarea {
 }
 
 #top-nav {
-  top: 85px;
-  display: grid;
-  position: relative;
+  top: 5.3125rem;
+  display: none;
   height: 250px;
   left: 0;
   right: 0;
@@ -106,26 +100,14 @@ textarea {
   transition: background-color 450ms;
 }
 
-body.header-not-at-top #top-nav {
-  position: fixed;
-  display: grid;
-}
-
-#top-of-site-pixel-anchor {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  top: 185px;
-  left: 0;
-}
-
 .hero-1 {
   background-color: #c8dad9;
-  padding: 8.75rem 1.25rem 0;
+  padding: 3.4375rem 1.25rem 0;
 }
 .hero-1 h1 {
   font-family: quanticobold, monospace;
   text-transform: uppercase;
+  font-size: 2rem;
   font-size: 2.25rem;
   line-height: 1;
   color: #271911;
@@ -139,36 +121,34 @@ body.header-not-at-top #top-nav {
   line-height: 1.35;
 }
 
-a:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
 button:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 
-button.order-online {
+button.hero-button {
   padding: 1rem 2.15rem;
   display: block;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   color: #ffffff;
   text-align: center;
-  font-size: 1.45rem;
+  font-size: 1.5rem;
   font-family: quanticobold, monospace;
   text-transform: uppercase;
   margin: 0 auto 1.25rem;
   background-color: #3c1f11;
+  content: " ";
 }
 
 .hero-2 {
-  background: #271911 url("../img/backgrounds/coffee-beans-bg.jpg") center/65rem no-repeat;
+  background: #271911 url(../img/backgrounds/coffee-beans-bg.jpg) center/65rem repeat;
   color: white;
+  margin-top: -4px;
 }
 .hero-2 h2 {
   font-family: quanticobold, monospace;
   text-transform: uppercase;
+  font-size: 2rem;
   text-align: center;
   font-size: 2rem;
   padding: 4.5rem 3rem 3rem;
@@ -191,6 +171,7 @@ button.order-online {
 .location-hours h2 {
   font-family: quanticobold, monospace;
   text-transform: uppercase;
+  font-size: 2rem;
   font-size: 2rem;
 }
 .location-hours .contact {
@@ -237,12 +218,17 @@ button.order-online {
   padding-left: 3.5rem;
 }
 
+.product-menu {
+  background-color: white;
+}
+
 .coffees, .teas, .pastries-snacks {
   text-align: center;
 }
 .coffees h2, .teas h2, .pastries-snacks h2 {
   font-family: quanticobold, monospace;
   text-transform: uppercase;
+  font-size: 2rem;
   font-size: 2rem;
   padding: 5rem 1.25rem 1.25rem;
   color: #212d31;
@@ -305,6 +291,7 @@ button.order-online {
 .cta h2 {
   font-family: quanticobold, monospace;
   text-transform: uppercase;
+  font-size: 2rem;
   font-size: 2.5rem;
   text-align: center;
   padding: 4rem 0 3rem;
@@ -333,7 +320,7 @@ button.order-online {
   padding-bottom: 5rem;
 }
 .email-signup .label {
-  font-family: "Quantico-Regular", "Quantico", monospace;
+  font-family: quanticobold, monospace;
   font-weight: 400;
 }
 .email-signup .name-email {
@@ -342,7 +329,7 @@ button.order-online {
   margin: 0.5rem 0 2.5rem;
   padding: 0.5rem;
   font-size: 1rem;
-  font-family: "Open-Sans", "Open Sans", sans-serif;
+  font-family: opensanslight, sans-serif;
   background-color: white;
   color: #271911;
   border-radius: 6px;
@@ -354,10 +341,10 @@ button.order-online {
 .email-signup .join-now {
   padding: 1rem 2.15rem;
   display: block;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   color: #ffffff;
   text-align: center;
-  font-size: 1.45rem;
+  font-size: 1.5rem;
   font-family: quanticobold, monospace;
   text-transform: uppercase;
   margin: 0 auto;
@@ -374,6 +361,7 @@ footer {
 footer h2 {
   font-family: quanticobold, monospace;
   text-transform: uppercase;
+  font-size: 2rem;
   font-size: 2rem;
   padding: 2rem 3.5rem 1rem;
 }
@@ -421,5 +409,40 @@ footer .socials-svg img {
 .sub-footer p:last-child {
   padding-top: 1rem;
 }
+
+#scrollToTopBtn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #b17c4e;
+  position: fixed;
+  bottom: 2.75rem;
+  right: 0;
+  color: white;
+  font-family: quanticobold, "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  transform: translateY(100px);
+  z-index: 100;
+  opacity: 0;
+  transition: all 450ms ease;
+  margin-right: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#scrollToTopBtn.showBtn {
+  opacity: 0.75;
+  margin-right: 1.25rem;
+  transform: translateY(0);
+  transition: all 150ms ease;
+  fill: white;
+}
+
+#scrollToTopBtn:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+@container (max-width: 300px) {}
 
 /*# sourceMappingURL=main.css.map */

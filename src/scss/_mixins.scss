@@ -1,13 +1,10 @@
 @import "variables.scss";
 
 
-@mixin hidden {
-  display: none;
-}
-
 @mixin heading {
   font-family: quanticobold, monospace;
   text-transform: uppercase;
+  font-size: 2rem;
 }
 
 @mixin menu {
@@ -28,10 +25,10 @@
 @mixin button {
   padding: 1rem 2.15rem;
   display: block;
-  border-radius: 10px;
+  border-radius: .625rem;
   color: #ffffff;
   text-align: center;
-  font-size: 1.45rem;
+  font-size: 1.5rem;
   font-family: quanticobold, monospace;
   text-transform: uppercase;
 }

@@ -86,7 +86,7 @@ header {
     padding: .5rem 6rem 0 0;
   }
 
-  button.view-menu {
+  button.hero-button{
     position: relative;
     @include mixins.button;
     background-color: variables.$dark-brown-button;

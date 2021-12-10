@@ -1,57 +1,27 @@
-const topNav = document.getElementById("top-nav");
-const hamburger = document.querySelector(".hamburger");
-const hamburger2 = document.querySelector(".hamburger2");
+function include(file) {
 
-if (
-  "IntersectionObserver" in window &&
-  "IntersectionObserverEntry" in window &&
-  "intersectionRatio" in window.IntersectionObserverEntry.prototype
-) {
-  let observer = new IntersectionObserver(entries => {
-    if (entries[0].boundingClientRect.y < 85) {
-      document.body.classList.add("header-not-at-top");
-    } else {
-      document.body.classList.remove("header-not-at-top");
-    }
-  });
-  observer.observe(document.querySelector("#top-of-site-pixel-anchor"));
+  var script = document.createElement('script');
+  script.src = file;
+  script.type = 'text/javascript';
+  script.defer = true;
+
+  document.getElementsByTagName('body').item(0).appendChild(script);
 }
 
+include('js/mediaQueryLists.js');
+include('js/mobileNav.js');
 
 
-// function mobileNav() {
-//   if (topNav.style.height === "250px") {
-//     topNav.style.height = "0";
+
+
+// function emailSignup() {
+//   if (document.getElementById("name").validity.valueMissing || document.getElementById("email").validity.valueMissing) {
+//     alert("Name & valid email address are required!");
 //   } else {
-//     topNav.style.height = "250px";
-//   }
-// };
-
-// function observedMobileNav() {
-//   if (topNav.style.height === "250px") {
-//     topNav.style.height = "0";
-//   } else {
-//     topNav.style.height = "250px";
+//     var nameInput = document.getElementById("name").value;
+//     var result = "Welcome to the DCD Coffee Club," + ' ' + nameInput + '!';
+//     document.getElementById("divResult").innerText = result;
 //   }
 // }
 
-
-// // function closeNav() {
-// //   document.getElementById("top-nav").style.height = "0%";
-// // }
-
-
-// hamburger.addEventListener('click', mobileNav);
-// hamburger2.addEventListener('click', observedMobileNav);
-
-function emailSignup() {
-  if (document.getElementById("name").validity.valueMissing || document.getElementById("email").validity.valueMissing) {
-    alert("Name & valid email address are required!");
-  } else {
-    var nameInput = document.getElementById("name").value;
-    var result = "Welcome to the DCD Coffee Club," + ' ' + nameInput + '!';
-    document.getElementById("divResult").innerText = result;
-  }
-}
-
-document.querySelector('#copyright-year').innerText = new Date().getFullYear();
+// document.querySelector('#copyright-year').innerText = new Date().getFullYear();
